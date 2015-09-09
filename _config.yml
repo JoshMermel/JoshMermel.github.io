@@ -18,7 +18,7 @@ avatar: https://avatars0.githubusercontent.com/u/1416467
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: JoshMermel@gmail.com
+  email: # this is in the header, no need to put it in the footer
   facebook:
   flickr:
   github: joshmermel
