@@ -33,4 +33,6 @@ Finally we swipe left to align all dots with shaded square
 
 <img src="/images/Move-Brute-Force/ex3.png width=540">
 
-
+A Puzzle I Couldn't Solve
+=========================
+<img src="/images/Move-Brute-Force/move-4-74.png width=540">
