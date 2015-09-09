@@ -36,3 +36,9 @@ Finally we swipe left to align all dots with shaded square
 A Puzzle I Couldn't Solve
 =========================
 <img src="/images/Move-Brute-Force/move-4-74.png|width=540">
+
+I had solved 99/100 of the 4x4, 1 color puzzles with the shortest possible
+solution but struggled on puzzle number 74.  My shortest solution, URURDRURLLDU
+was two moves too long. After some work on paper, my housemates and I optomized
+it to an eleven move solution; we were convinced that there was no solution in
+ten moves.
