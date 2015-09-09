@@ -18,21 +18,21 @@ obstacle, or another blocked dot.
 
 See consider the following example:
 
-Here is the initial state of the board <img src="/images/Move-Brute-Force/ex0.png width=540">
+Here is the initial state of the board <img src="/images/Move-Brute-Force/ex0.png|width=540">
 
 We swipe left to move the top and bottom dots one space to the left and
 producing this board 
 
-<img src="/images/Move-Brute-Force/ex1.png width=540">
+<img src="/images/Move-Brute-Force/ex1.png|width=540">
 
 Next we swipe down moving the rightmost dot down 
 
-<img src="/images/Move-Brute-Force/ex2.png width=540"> 
+<img src="/images/Move-Brute-Force/ex2.png|width=540"> 
 
 Finally we swipe left to align all dots with shaded square 
 
-<img src="/images/Move-Brute-Force/ex3.png width=540">
+<img src="/images/Move-Brute-Force/ex3.png|width=540">
 
 A Puzzle I Couldn't Solve
 =========================
-<img src="/images/Move-Brute-Force/move-4-74.png width=540">
+<img src="/images/Move-Brute-Force/move-4-74.png|width=540">
