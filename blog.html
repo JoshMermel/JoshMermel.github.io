@@ -1,0 +1,40 @@
+---
+layout: default
+title: Blog
+---
+
+<table>
+	{% for post in site.posts %}
+			<tr class="post">
+				<td nowrap style='font-size: medium; text-align: right;'> {{ post.date | date: "%m.%-d.%y" }} </td>
+				<td style='text-align: right; color:#aaa; font-size: medium;'> 
+					post
+				</td>
+				<td> 
+					<a class='post-link' href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>  <br/>
+				</td>
+			</tr>
+		{% if post.project %} 
+			<tr class='post'>
+				<td>&nbsp;</td>
+				<td style='text-align: right; color:#aaa; font-size: medium;'>
+					demo
+				</td>
+				<td>
+					<a class='project-link' href="{{ post.projurl }}">{{post.project}}</a>
+				</td>
+			</tr>
+		{% endif %}
+		{% if post.paper %} 
+			<tr class='post'>
+				<td>&nbsp;</td>
+				<td style='text-align: right; color:#aaa; font-size: medium;'> 
+					paper
+				</td>
+				<td>
+					<a class='paper-link' href="{{ post.paperurl }}">{{post.paper}}</a>
+				</td>
+			</tr>
+		{% endif %}
+	{% endfor %}
+</table>
