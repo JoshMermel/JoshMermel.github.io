@@ -14,6 +14,3 @@ range of interests including:
  - Riddles and logic puzzles
  - Calligraphy
  - Ingress
-
-### Contact
-Email me at [joshmermel@gmail.com](mailto:joshmermel@gmail.com).
