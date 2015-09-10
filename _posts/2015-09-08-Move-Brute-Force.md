@@ -23,7 +23,8 @@ obstacle, or another blocked dot.
 
 See consider the following example:
 
-Here is the initial state of the board <img src="/images/Move-Brute-Force/ex0.png">
+Here is the initial state of the board <img
+src="/images/Move-Brute-Force/ex0.png">
 
 We swipe left to move the top and bottom dots one space to the left and
 producing this board 
@@ -50,7 +51,15 @@ was two moves too long.
 
 Trying to Brute Force on Paper
 ==============================
-Put information about our strategy and maybe some images of our scratch paper
+My strategy to solve the game was to work both forward and backward. Working
+forward it was easy to see that the first move must be up; all other moves have
+no effect.  Working backward it was easy to see that the last move must be up as
+well. No state exists such that a left, right or down leads to the goal
+state. From there the options became far more numerous. We met in the middle
+believing we knew all states that could be reached after 4 moves and all states
+that could be reached after 6 moves.  We then used hueristics to pairwise rule
+out all the options.  We concluded that the board could be solved in at best 11
+moves.
 
 Solving the game in code
 ========================
@@ -60,7 +69,11 @@ completed in ten moves.  My implementation has two parts.
 1. A python class that more or less implements the entire game
 2. A python main that trys possible move sequences to see if they cause victory.
 
-More to come on this when it isn't midnight
+###V1
+
+###V2
+
+###V3
 
 Result
 ======
