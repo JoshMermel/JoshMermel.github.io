@@ -6,7 +6,7 @@ title: Solving a puzzle game the easy way
 An android game I've been really enjoying lately is
 [move](https://play.google.com/store/apps/details?id=com.nitako.move) from
 Nitako Brain Studios. It is a game with simple mechanics and extremely good
-puzzle design.  
+puzzle design.
 
 Game Mechanics
 ==============
@@ -141,18 +141,19 @@ It turns out there were two solutions.
 V3 was far faster than I expected.  I believe this is because the number of
 states reachable in ten moves is a fraction of the number of states that can be
 on the board. There are 14 free squares on the board and 4 dots to place so
-there are $$14\*13\*12\*11/24 = 924$$ possible board states. However during the
+there are $$14*13*12*11/24 = 924$$ possible board states. However during the
 running of V3, only 593 of those are actually visited.
 
 Where We Went Wrong on Paper
 ============================
 1. Working backward was harder than it seemed.  One move to enter a state may
-   mean many possible preceding states.  
+   mean many possible preceding states.
 2. Seemingly implausible states may be easier to get into than anticipated.
 
 Open Questions
 ==============
 1. How was this puzzle generated?
   * More generally, how were the 1000+ puzzles in the game generated
-2. Given the set of solutions to a puzzle, is it possible to reconstruct the initial board?
+2. Given the set of solutions to a puzzle, is it possible to reconstruct the
+   initial board?
   * What additional information helps (i.e. board size, distribution of colors...)
