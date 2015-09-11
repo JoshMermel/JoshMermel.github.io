@@ -83,6 +83,35 @@ are at most 4^10 (roughly one million) possible move sequences.  It isn't that
 expensive to compute one move on the board. Lets just simulate each of the one
 million sequences and print the first successful solution we find.
 
+The two interesting pieces of code were as follows. The board class exposed a
+function that took an integer, treated it as a sequence of moves, and executed
+that sequence on its internal board:
+
+    def move_sequence(self, instructions, num_instructions):
+        for i in range(num_instructions):
+            todo = instructions % 4
+            instructions = instructions / 4
+            if todo == 0:
+                self.move_down()
+            elif todo == 1:
+                self.move_up()
+            elif todo == 2:
+                self.move_right()
+            else: # todo == 3
+                self.move_left()
+
+The main function simply called the move_sequence function on every integer in
+the valid range and then compared the result against the desired final board.
+
+    num_moves = 10
+    for i in range(4**num_moves):
+        my_board.reset()
+        my_board.move_sequence(i, num_moves)
+        if my_board == goal_board:
+            print 'FOUND IT!'
+            my_board.move_sequence_str(i, num_moves)
+            break
+
 ####The Good
  - Very quick to write
  - Potentially parallelizable?
