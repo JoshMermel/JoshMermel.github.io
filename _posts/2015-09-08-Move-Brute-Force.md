@@ -83,34 +83,35 @@ are at most 4^10 (roughly one million) possible move sequences.  It isn't that
 expensive to compute one move on the board. Lets just simulate each of the one
 million sequences and print the first successful solution we find.
 
-The two interesting pieces of code were as follows. The board class exposed a
-function that took an integer, treated it as a sequence of moves, and executed
-that sequence on its internal board:
+The two interesting pieces of code were as follows. 
 
-    def move_sequence(self, instructions, num_instructions):
-        for i in range(num_instructions):
-            todo = instructions % 4
-            instructions = instructions / 4
-            if todo == 0:
-                self.move_down()
-            elif todo == 1:
-                self.move_up()
-            elif todo == 2:
-                self.move_right()
-            else: # todo == 3
-                self.move_left()
+     1 def move_sequence(self, instructions, num_instructions):
+     2     for i in range(num_instructions):
+     3         todo = instructions % 4
+     4         instructions = instructions / 4
+     5         if todo == 0:
+     6             self.move_down()
+     7         elif todo == 1:
+     8             self.move_up()
+     9         elif todo == 2:
+    10             self.move_right()
+    11         else: # todo == 3
+    12             self.move_left()
+
+The board class exposed a function that took an integer, treated it as a
+sequence of moves, and executed that sequence on its internal board:
+
+     1 num_moves = 10
+     2 for i in range(4**num_moves):
+     3     my_board.reset()
+     4     my_board.move_sequence(i, num_moves)
+     5     if my_board == goal_board:
+     6         print 'FOUND IT!'
+     7         my_board.move_sequence_str(i, num_moves)
+     8         break
 
 The main function simply called the move_sequence function on every integer in
 the valid range and then compared the result against the desired final board.
-
-    num_moves = 10
-    for i in range(4**num_moves):
-        my_board.reset()
-        my_board.move_sequence(i, num_moves)
-        if my_board == goal_board:
-            print 'FOUND IT!'
-            my_board.move_sequence_str(i, num_moves)
-            break
 
 ####The Good
  - Very quick to write
@@ -130,11 +131,33 @@ the valid range and then compared the result against the desired final board.
 
 ###V2
 This version of the program attempted to leverage the fact that early
-subsequences were being executed many times by using memoization. It depth first
-explored a trie where every node held the state of the board after the sequence
-of steps leading to it. This design made it easy to ignore fruitless
-subsequences. Whenever I encountered a move that didn't change the board state,
-I stopped exploring that branch of the tree.
+subsequences were being executed many times by using memoization. 
+
+     1 def search(path, board, depth, max_depth, goal):
+     2     if depth == max_depth:
+     3         if board == goal:
+     4             return [path]
+     5         return []
+     6     else:
+     7         ret = []
+     8         for char, board in {'U': board.move_up(),
+     9                             'D': board.move_down(),
+    10                             'L': board.move_left(),
+    11                             'R': board.move_right(),
+    12                             }.iteritems():
+    13             if(board):
+    14                 success = search(path + char, board, depth + 1, max_depth, goal)
+    15                 if success:
+    16                     ret += success
+    17         return ret
+
+I made a minor change to my board class here to make the move_* functions truen
+false if they failed to change the board state (not shown).
+
+The above function depth first explores a trie where every node held the state
+of the board after the sequence of steps leading to it. This design made it easy
+to ignore fruitless subsequences. Whenever I encountered a move that didn't
+change the board state, I stopped exploring that branch of the tree.
 
 ####The Good
  - Much faster than V1
