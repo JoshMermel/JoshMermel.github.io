@@ -12,7 +12,7 @@ Game Mechanics
 ==============
 
 Their [trailer](https://www.youtube.com/watch?v=up3lf5Rd97k)
-shows off pretty much everything you need to know about it.  If you don't
+shows off pretty much everything you need to know about it. If you don't
 access to youtube then I'll do my best to explain.
 
 A board consists of an n by n square featuring n colored dots, n shaded squares
@@ -47,25 +47,25 @@ A Puzzle I Couldn't Solve
 <img src="/images/Move-Brute-Force/move-4-74.png" style="max-height: 400px">
 
 I had solved 99/100 of the 4x4, 1 color puzzles with the shortest possible
-solution but struggled on puzzle number 74.  My shortest solution, URURDRURLLDU
+solution but struggled on puzzle number 74. My shortest solution, URURDRURLLDU
 was two moves too long.
 
 Trying to Brute Force on Paper
 ==============================
 My strategy to solve the game was to work both forward and backward. Working
 forward it was easy to see that the first move must be up; all other moves have
-no effect.  Working backward it was easy to see that the last move must be up as
+no effect. Working backward it was easy to see that the last move must be up as
 well. No state exists such that a left, right or down leads to the goal
 state. From there the options became far more numerous. We met in the middle
 believing we knew all states that could be reached after 4 moves and all states
-that could be reached after 6 moves.  We then used heuristics to pairwise rule
-out all the options.  We concluded that the board could be solved in at best 11
+that could be reached after 6 moves. We then used heuristics to pairwise rule
+out all the options. We concluded that the board could be solved in at best 11
 moves.
 
 Solving the game in code
 ========================
 I decided to write some python to settle whether or not this puzzle could be
-completed in ten moves.  My implementation has two parts.
+completed in ten moves. My implementation has two parts.
 
 1. A python class that more or less implements the entire game
 2. A python main that tries possible move sequences to see if they cause victory.
@@ -79,7 +79,7 @@ of swiping in each direction and not much else.
 
 ###V1
 My first version of the program optimized for programmer time not runtime. There
-are at most 4^10 (roughly one million) possible move sequences.  It isn't that
+are at most 4^10 (roughly one million) possible move sequences. It isn't that
 expensive to compute one move on the board. Lets just simulate each of the one
 million sequences and print the first successful solution we find.
 
@@ -99,7 +99,7 @@ The two interesting pieces of code were as follows.
     12             self.move_left()
 
 The board class exposed a function that took an integer, treated it as a
-sequence of moves, and executed that sequence on its internal board:
+sequence of moves, and executed that sequence on its internal board.
 
      1 num_moves = 10
      2 for i in range(4**num_moves):
@@ -110,7 +110,7 @@ sequence of moves, and executed that sequence on its internal board:
      7         my_board.move_sequence_str(i, num_moves)
      8         break
 
-The main function simply called the move_sequence function on every integer in
+The main function then called the move_sequence function on every integer in
 the valid range and then compared the result against the desired final board.
 
 ####The Good
@@ -176,8 +176,8 @@ branch of the tree (line 13).
  - Needs to know how long the ideal solution is at compile time
 
 ###V3
-This version switched from depth first search to breadth first search. It was
-build on the idea that most states are reachable in many ways and we shouldn't
+This version switched from depth first search to breadth first search. It is
+built on the idea that most states are reachable in many ways and we shouldn't
 have to keep paying to do the same computations on those states.
 
      1 # key, Board object
@@ -222,17 +222,18 @@ in any number of moves.
 Result and Analysis
 ===================
 It turns out there were two solutions.
+
  - UURDULLDRU 
  - ULUULDRDDU
 
 It is clear to me now that a state centric approach with caching of intermediate
 results is the correct method. V1 computed as many as 4 million transitions
-between states.  V3 only did work on each state once so it computed at most ~2
+between states. V3 only did work on each state once so it computed at most ~2
 thousand transitions.
 
 Where We Went Wrong on Paper
 ============================
-1. Working backward was harder than it seemed.  One move to enter a state may
+1. Working backward was harder than it seemed. One move to enter a state may
    mean many possible preceding states.
 2. Seemingly implausible states may be easier to get into than anticipated.
 
