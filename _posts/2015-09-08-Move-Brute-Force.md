@@ -131,7 +131,8 @@ the valid range and then compared the result against the desired final board.
 
 ###V2
 This version of the program attempted to leverage the fact that early
-subsequences were being executed many times by using memoization. 
+subsequences were being executed many times by using memoization. I also
+decided to return a list of solutions in case there were multiple.
 
      1 def search(path, board, depth, max_depth, goal):
      2     if depth == max_depth:
@@ -154,10 +155,11 @@ subsequences were being executed many times by using memoization.
 I made a minor change to my board class here to make the move_* functions truen
 false if they failed to change the board state (not shown).
 
-The above function depth first explores a trie where every node held the state
-of the board after the sequence of steps leading to it. This design made it easy
-to ignore fruitless subsequences. Whenever I encountered a move that didn't
-change the board state, I stopped exploring that branch of the tree.
+The above function then depth first explores a tree where every node holds the
+state of the board after the sequence of steps leading to it. The change to the
+board class made it easy to ignore fruitless subsequences. Whenever I
+encountered a move that didn't change the board state, I stopped exploring that
+branch of the tree (line 13).
 
 ####The Good
  - Much faster than V1
@@ -176,9 +178,37 @@ change the board state, I stopped exploring that branch of the tree.
 ###V3
 This version switched from depth first search to breadth first search. It was
 build on the idea that most states are reachable in many ways and we shouldn't
-have to keep paying to do the same computations on those states. It maintains
-dict of all visited states and the shortest known path to them. Whenever a 
-state is computed, the algorithm checks if it is new and ignores if it is not.
+have to keep paying to do the same computations on those states.
+
+     1 # key, Board object
+     2 # val, string
+     3 # represtents all visited states and the shortest paths to them
+     4 boards = {}
+     5 boards[my_board] = ""
+     6 
+     7 # a deque of (Board, str) tuples
+     8 to_search = deque()
+     9 to_search.append((my_board, ""))
+    10 
+    11 while to_search:
+    12     (working_board, path) = to_search.popleft()
+    13     for char, board in {'U': working_board.move_up(),
+    14                         'D': working_board.move_down(),
+    15                         'L': working_board.move_left(),
+    16                         'R': working_board.move_right(),
+    17                         }.iteritems():
+    18         if board == goal_board:
+    19             print path + char + '\n'
+    20         elif board in boards:
+    21             pass
+    22         else:
+    23             boards[board] = path + char
+    24             to_search.append((board, path + char))
+
+It maintains dict of all visited states and the shortest known path to them.
+Whenever a state is computed, the algorithm checks if it is new and ignores if
+it is not. In the case of the board in question, only ~500 states were reachable
+in any number of moves.
 
 ####The Good
  - Much faster than V2
@@ -187,6 +217,7 @@ state is computed, the algorithm checks if it is new and ignores if it is not.
 
 ####The Bad
  - Requires more memory
+ - I forgot to tell it when to stop other than when it has reached all states
 
 Result and Analysis
 ===================
@@ -194,11 +225,10 @@ It turns out there were two solutions.
  - UURDULLDRU 
  - ULUULDRDDU
 
-V3 was far faster than I expected.  I believe this is because the number of
-states reachable in ten moves is a fraction of the number of states that can be
-on the board. There are 14 free squares on the board and 4 dots to place so
-there are $$14*13*12*11/24 = 924$$ possible board states. However during the
-running of V3, only 593 of those are actually visited.
+It is clear to me now that a state centric approach with caching of intermediate
+results is the correct method. V1 computed as many as 4 million transitions
+between states.  V3 only did work on each state once so it computed at most ~2
+thousand transitions.
 
 Where We Went Wrong on Paper
 ============================
@@ -213,3 +243,7 @@ Open Questions
 2. Given the set of solutions to a puzzle, is it possible to reconstruct the
    initial board?
   * What additional information helps (i.e. board size, distribution of colors...)
+3. What is the board/goal pair with the longest possible solution at each board
+   size? 
+   * In the case of puzzle 74, there is a state that cannot be reached in
+     fewer than 19 moves!
