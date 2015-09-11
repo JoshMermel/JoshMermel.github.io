@@ -115,6 +115,7 @@ the valid range and then compared the result against the desired final board.
 ####The Good
  - Very quick to write
  - Potentially parallelizable?
+
 ####The Bad
  - Slow
    - 17 second runtime
@@ -140,6 +141,7 @@ I stopped exploring that branch of the tree.
    - 4 second runtime
  - Relatively memory inexpensive - The memoization stored at most as many boards
    as the length of the solution at a given time.
+
 ####The Bad
  - No sense of duplicate state
    - Down-Up on the board resets initial state but this program still tries up
@@ -159,6 +161,7 @@ state is computed, the algorithm checks if it is new and ignores if it is not.
  - Much faster than V2
    - 0.2 second runtime
    - Does not need to be told how long the ideal solution is
+
 ####The Bad
  - Requires more memory
 
