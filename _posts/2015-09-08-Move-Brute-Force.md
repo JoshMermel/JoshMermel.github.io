@@ -25,7 +25,7 @@ See consider the following example:
 
 Here is the initial state of the board 
 
-<div style="text-align:center"><img src="/images/Move-Brute-Force/ex0.png" style="max-height: 400px">
+<img src="/images/Move-Brute-Force/ex0.png" style="max-height: 400px">
 
 We swipe left to move the top and bottom dots one space to the left and
 producing this board 
