@@ -29,21 +29,21 @@ src="/images/Move-Brute-Force/ex0.png" style="max-height: 400px">
 We swipe left to move the top and bottom dots one space to the left and
 producing this board 
 
-<img src="/images/Move-Brute-Force/ex1.png">
+<img src="/images/Move-Brute-Force/ex1.png" style="max-height: 400px">
 
 Next we swipe down moving the rightmost dot down 
 
-<img src="/images/Move-Brute-Force/ex2.png"> 
+<img src="/images/Move-Brute-Force/ex2.png" style="max-height: 400px"> 
 
 Finally we swipe left to align all dots with shaded square 
 
-<img src="/images/Move-Brute-Force/ex3.png">
+<img src="/images/Move-Brute-Force/ex3.png" style="max-height: 400px">
 
 For each board, the game tells you how many moves are in the optimal solution.
 
 A Puzzle I Couldn't Solve
 =========================
-<img src="/images/Move-Brute-Force/move-4-74.png">
+<img src="/images/Move-Brute-Force/move-4-74.png" style="max-height: 400px">
 
 I had solved 99/100 of the 4x4, 1 color puzzles with the shortest possible
 solution but struggled on puzzle number 74.  My shortest solution, URURDRURLLDU
