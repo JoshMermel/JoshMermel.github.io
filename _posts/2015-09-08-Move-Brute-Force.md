@@ -250,3 +250,6 @@ Open Questions
    size? 
    * In the case of puzzle 74, there is a state that cannot be reached in
      fewer than 19 moves!
+4. The two solutions to this puzzle are nearly anagrams.  The first has an extra
+   R and the second has an extra D. How far can solutions to the same board be
+   from each other in terms of distrobution of moves?
