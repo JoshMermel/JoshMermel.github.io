@@ -85,7 +85,7 @@ million sequences and print the first successful solution we find.
 
 The two interesting pieces of code were as follows. 
 
-```python
+```
 def move_sequence(self, instructions, num_instructions):
      for i in range(num_instructions):
           todo = instructions % 4
