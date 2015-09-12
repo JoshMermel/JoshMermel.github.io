@@ -85,20 +85,20 @@ million sequences and print the first successful solution we find.
 
 The two interesting pieces of code were as follows. 
 
-```
-def move_sequence(self, instructions, num_instructions):
-     for i in range(num_instructions):
-          todo = instructions % 4
-          instructions = instructions / 4
-          if todo == 0:
-               self.move_down()
-          elif todo == 1:
-               self.move_up()
-          elif todo == 2:
-               self.move_right()
-          else: # todo == 3
-               self.move_left()
-```
+
+     1 def move_sequence(self, instructions, num_instructions):
+     2      for i in range(num_instructions):
+     3           todo = instructions % 4
+     4           instructions = instructions / 4
+     5           if todo == 0:
+     6                self.move_down()
+     7           elif todo == 1:
+     8                self.move_up()
+     9           elif todo == 2:
+    10                self.move_right()
+    11           else: # todo == 3
+    12                self.move_left()
+
 
 The board class exposed a function that took an integer, treated it as a
 sequence of moves, and executed that sequence on its internal board.
