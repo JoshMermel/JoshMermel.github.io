@@ -3,7 +3,7 @@ layout: post
 title: Corollaries in Siteswap
 ---
 
-# Lack of Intro
+## Lack of Intro
 Siteswap, the mathematical notation for juggling is relatively well researched
 and well understood. Rather than start this blog post with a few paragraphs
 about its history and some simple examples, I'm going to provide some links that
@@ -14,26 +14,26 @@ do that and jump right into the meat.
  - [A well written paper proving some fundamental results](http://www.math.ucsd.edu/~ronspubs/94_01_juggling.pdf)
  - [A more modern book proving additional theorems](http://www.amazon.com/gp/product/0387955135?psc=1&redirect=true&ref_=od_aui_detailpages00)
 
-# Validation of Vanilla Siteswaps
+## Validation of Vanilla Siteswaps
 
-# Generating New Siteswaps From Existing Ones
+## Generating New Siteswaps From Existing Ones
 
-## Add 1 to Every Number
+### Add 1 to Every Number
 
-## Add Pattern Length to One Number
+### Add Pattern Length to One Number
 
-## Swap Sites of Two Numbers
+### Swap Sites of Two Numbers
 
-## Extending to Multiplex Siteswaps
+### Extending to Multiplex Siteswaps
 
-## Extending to Sync Siteswaps
+### Extending to Sync Siteswaps
 
-# Understanding Transitions
+## Understanding Transitions
 
-## Entry + Exit is a Valid Siteswap
+### Entry + Exit is a Valid Siteswap
 
-## Computing Transitions Between Vanilla Siteswap
+### Computing Transitions Between Vanilla Siteswap
 
-## Extending to Multiplex Siteswaps
+### Extending to Multiplex Siteswaps
 
-## Extending to Sync siteswaps
+### Extending to Sync siteswaps
