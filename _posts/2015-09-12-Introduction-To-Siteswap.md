@@ -32,7 +32,7 @@ $$ \forall x \forall y,  a_x + x \not \equiv a_y + y \pmod n$$
 
 If we wanted to verify these pairwise relations individually, we would need to
 do quadratically many checks. A cheaper way to to note that the above statement
-is equivalent to saying that the set $$\{a_x\} + x \pmod n $$ is equivalent to a
+is equivalent to saying that the set $$\{a_x + x\} \pmod n $$ is equivalent to a
 permutation of the numbers 1 through $$n$$.
 
 ## Generating New Siteswaps From Existing Ones
