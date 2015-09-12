@@ -30,6 +30,11 @@ throws that land at the same time. We can express this formally as follows.
 For all siteswaps $$a_1 a_2 a_3 \cdots a_n$$,
 $$ \forall x \forall y,  a_x + x \not \equiv a_y + y \pmod n$$
 
+If we wanted to verify these pairwise relations individually, we would need to
+do quadratically many checks. A cheaper way to to note that the above statement
+is equivalent to saying that the set $$\{a_x\} + x \pmod n $$ is equivalent to a
+permutation of the numbers 1 through $$n$$.
+
 ## Generating New Siteswaps From Existing Ones
 
 ### Add 1 to Every Number
