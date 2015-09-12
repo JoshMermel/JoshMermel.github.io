@@ -17,7 +17,18 @@ do that and jump right into the meat.
 ## Validation of Vanilla Siteswaps
 It is well known that a vanilla siteswap which does not average to an integer is
 invalid. What is less well known is why certain vanilla siteswaps that average
-to an integer are invalid.
+to an integer are invalid. 
+
+The premise of siteswap is that discretized time into a number of evenly space
+units. Every throw and every catch must occur at one of those units. When we say
+that a pattern is valid we really mean that the indegree each time unit (the
+number of objects being caught then) is equal to the outdegree (the number of
+objects being thrown then).  In vanilla siteswap, that means at every time unit,
+at most one ball can be caught. Thus, a pattern is forbidden if there exist two
+throws that land at the same time. We can express this formally as follows.
+
+For all siteswaps $$a_1 a_2 a_3 \hdots a_n$$,
+$$ \forall x \forall y,  a_x + x \not \equiv a_y + y \pmod n$$
 
 ## Generating New Siteswaps From Existing Ones
 
