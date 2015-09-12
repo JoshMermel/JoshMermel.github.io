@@ -16,12 +16,24 @@ do that and jump right into the meat.
 
 # Validation of Vanilla Siteswaps
 
+# Generating new site
+
 ## Add 1 to Every Number
 
 ## Add Pattern Length to one number
 
 ## Swap sites of two numbers
 
-# Extending to Multiplex Siteswaps
+## Extending to Multiplex Siteswaps
 
-# Extending to Sync Sitweswaps
+## Extending to Sync Siteswaps
+
+# Understanding Transitions
+
+## Entry + Exit is a valid siteswap
+
+## Computing Transitions between Vanilla Siteswap
+
+## Extending to Multiplex Siteswaps
+
+## Extending to Sync Siteswaps
