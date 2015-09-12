@@ -35,6 +35,16 @@ do quadratically many checks. A cheaper way to to note that the above statement
 is equivalent to saying that the set $$\{a_x + x\} \pmod n $$ is equivalent to a
 permutation of the numbers 1 through $$n$$.
 
+
+     1 def verify(siteswap):
+     2     multiplicity = [0] * len(siteswap);
+     3     for i in range (len(siteswap)):
+     4         multiplicity[(siteswap[i]+i) % len(siteswap)] += 1;
+     5     for count in multiplicity:
+     6         if count != 1:
+     7             return False;
+     8     return True;
+
 ## Generating New Siteswaps From Existing Ones
 
 ### Add 1 to Every Number
