@@ -15,6 +15,9 @@ do that and jump right into the meat.
  - [A more modern book proving additional theorems](http://www.amazon.com/gp/product/0387955135?psc=1&redirect=true&ref_=od_aui_detailpages00)
 
 ## Validation of Vanilla Siteswaps
+It is well known that a vanilla siteswap which does not average to an integer is
+invalid. What is less well known is why certain vanilla siteswaps that average
+to an integer are invalid.
 
 ## Generating New Siteswaps From Existing Ones
 
