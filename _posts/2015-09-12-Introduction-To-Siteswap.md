@@ -16,13 +16,13 @@ do that and jump right into the meat.
 
 # Validation of Vanilla Siteswaps
 
-# Generating new site
+# Generating New Siteswaps From Existing Ones
 
 ## Add 1 to Every Number
 
-## Add Pattern Length to one number
+## Add Pattern Length to One Number
 
-## Swap sites of two numbers
+## Swap Sites of Two Numbers
 
 ## Extending to Multiplex Siteswaps
 
@@ -30,10 +30,10 @@ do that and jump right into the meat.
 
 # Understanding Transitions
 
-## Entry + Exit is a valid siteswap
+## Entry + Exit is a Valid Siteswap
 
-## Computing Transitions between Vanilla Siteswap
+## Computing Transitions Between Vanilla Siteswap
 
 ## Extending to Multiplex Siteswaps
 
-## Extending to Sync Siteswaps
+## Extending to Sync siteswaps
