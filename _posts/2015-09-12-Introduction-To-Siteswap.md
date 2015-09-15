@@ -95,7 +95,22 @@ of pattern generation is the origin of the name siteswap.
 We can model multiplex siteswaps very similarly to vanilla siteswaps by relaxing
 the condition that indegree and outdegree can be at most 1. We now only require
 that they be equal at each time unit. This means that much of the reasoning that
-we applied to vanilla siteswaps is still applicable.
+we applied to vanilla siteswaps is still applicable. Unfortunately our easy to
+describe mutation strategies can't be said as easily anymore.
+
+If we can identify a subset of the pattern which is a valid vanilla pattern then
+we can increment every element of that subset and get a valid pattern.  For
+example [43]41 contains 441 so we can create the pattern [53]52.  I'm actually
+not sure if this is always possible - probably not.
+
+When counting patten length we count a multiplex as a single throw. Then the
+strategy of adding pattern length to any one number still works as before.  For
+example 23[34] goes to 53[34], 26[34], 23[46] and 23[37] all of which are valid
+4 ball multiplex patterns.
+
+Swapping sites works exactly as before. We pick two throws where the first
+doesn't doesn't land before the second is thrown and swap their sites.
+
 
 ### Extending to Sync Siteswaps
 
