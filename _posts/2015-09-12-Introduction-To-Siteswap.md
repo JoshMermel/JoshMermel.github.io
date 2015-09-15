@@ -125,8 +125,27 @@ each time unit there is a left site and a right site and we can swap between
 time units or within time units.
 
 ## Understanding Transitions
+When describing a pattern that isn't in ground state, jugglers sometimes list
+the sequence of throws to enter it from ground state and the sequence of throws
+to exit it.
 
 ### Entry + Exit is a Valid Siteswap
+A fact that isn't commonly known is that the concatenation of the entry and exit
+sequences is always a valid siteswap. If we think about siteswaps as cycles in a
+state machine, the reason for this is apparent. The transitions are paths from a
+node in one cycle to a node in the other and back.  Therefore the concatenation
+of the two is a cycle in the graph as well and must also be a valid siteswap.
+Furthermore if the starting pattern was ground state then the generated
+Entry+Exit siteswap will also be ground state.
+
+This fact is less useful for generating new siteswaps than it is for quickly
+computing the exit from a siteswap of known entry. For example to enter 933 from
+a 5 ball cascade we can throw a 7.  A five ball ground state move that starts
+with 7 is 744.  Therefore 44 is a valid exit from 933 back to 5.
+
+We can repeat this process to generate other transitions. A five ball ground
+state siteswap that ends in 44 is 94444.  Therefore we can also enter 933 from 5
+with a 944.
 
 ### Computing Transitions Between Vanilla Siteswap
 
