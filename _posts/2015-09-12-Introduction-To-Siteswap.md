@@ -79,6 +79,14 @@ This strategy does not. Lets start with an example, 441.
 
 <img src="/images/Siteswap/441-end-locations.png" style="max-height: 400px">
 
+In this image shows which time unit each throw will land on. To modify this
+siteswap, we are going to swap the ending locations of the two 4s. The first of
+our three throws now goes forward 5, the second throw goes forward 3, and the
+thrid is unmodified and goes forward 1. We have just discovered the patter 531.
+
+<img src="/images/Siteswap/531-end-locations.png" style="max-height: 400px">
+
+
 ### Extending to Multiplex Siteswaps
 
 ### Extending to Sync Siteswaps
