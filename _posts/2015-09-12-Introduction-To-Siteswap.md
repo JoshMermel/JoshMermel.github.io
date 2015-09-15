@@ -77,14 +77,14 @@ value remain positive.
 The above two mutation methods both modify the number of objects being juggled;
 This strategy does not. Lets start with an example, 441. 
 
-<img src="/images/Siteswap/441-end-locations.png" style="max-height: 400px">
+<img src="/images/Siteswap/441_end_locations.png" style="max-height: 400px">
 
 In this image shows which time unit each throw will land on. To modify this
 siteswap, we are going to swap the ending locations of the two 4s. The first of
 our three throws now goes forward 5, the second throw goes forward 3, and the
-thrid is unmodified and goes forward 1. We have just discovered the patter 531.
+third is unmodified and goes forward 1. We have just discovered the patter 531.
 
-<img src="/images/Siteswap/531-end-locations.png" style="max-height: 400px">
+<img src="/images/Siteswap/531_end_locations.png" style="max-height: 400px">
 
 More generally, if we select two throws $$a_i$$ and $$a_j$$, such that $$i < j$$
 and $$a_i + i < j$$, then we can replace $a_i$ with $$a_j + j - i$$ and $$a_j$$
@@ -92,6 +92,10 @@ with $$a_i + i - j$$ - effectively swapping the sites they land at.  This method
 of pattern generation is the origin of the name siteswap.
 
 ### Extending to Multiplex Siteswaps
+We can model multiplex siteswaps very similarly to vanilla siteswaps by relaxing
+the condition that indegree and outdegree can be at most 1. We now only require
+that they be equal at each time unit. This means that much of the reasoning that
+we applied to vanilla siteswaps is still applicable.
 
 ### Extending to Sync Siteswaps
 
