@@ -86,6 +86,10 @@ thrid is unmodified and goes forward 1. We have just discovered the patter 531.
 
 <img src="/images/Siteswap/531-end-locations.png" style="max-height: 400px">
 
+More generally, if we select two throws $$a_i$$ and $$a_j$$, such that $$i < j$$
+and $$a_i + i < j$$, then we can replace $a_i$ with $$a_j + j - i$$ and $$a_j$$
+with $$a_i + i - j$$ - effectively swapping the sites they land at.  This method
+of pattern generation is the origin of the name siteswap.
 
 ### Extending to Multiplex Siteswaps
 
