@@ -111,8 +111,18 @@ example 23[34] goes to 53[34], 26[34], 23[46] and 23[37] all of which are valid
 Swapping sites works exactly as before. We pick two throws where the first
 doesn't doesn't land before the second is thrown and swap their sites.
 
-
 ### Extending to Sync Siteswaps
+Sync siteswaps are doubled in a way that is subtle but convenient. I'll probably
+go into it more in another blog post. On the topic of mutating sync siteswaps
+though, we need to add 2 to every number which increases the total number of
+balls by 2. For example (4x,2x) goes to (6x,4x)
+
+When counting pattern length, each (a,b) throw counts as two throws. For example
+(4,2x)(2x,4) maps to (8,2x)(2x,4) or (4,6x)(2x,4).
+
+Swapping sites works as before but with a more complicated notion of a site. At
+each time unit there is a left site and a right site and we can swap between
+time units or within time units.
 
 ## Understanding Transitions
 
