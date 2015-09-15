@@ -28,8 +28,8 @@ at most one ball can be caught. Thus, a pattern is forbidden if there exist two
 throws that land at the same time. We can express this formally as follows.
 
 For all siteswaps $$a_1 a_2 \cdots a_n$$,
-$$ \forall xi \in \{1 \cdots n\} \forall y \in \{1 \cdots n\},  a_x + x \not
-\equiv a_y + y \pmod n$$
+$$ \forall xi \in \{1 \cdots n\} \forall y \in \{1 \cdots n\}, x \ne y, a_x + x
+\not \equiv a_y + y \pmod n$$
 
 If we wanted to verify these pairwise relations individually, we would need to
 do quadratically many checks. A cheaper way to to note that the above statement
