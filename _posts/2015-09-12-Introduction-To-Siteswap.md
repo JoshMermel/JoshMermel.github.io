@@ -34,7 +34,7 @@ $$ \forall xi \in \{1 \cdots n\} \forall y \in \{1 \cdots n\}, x \ne y, a_x + x
 If we wanted to verify these pairwise relations individually, we would need to
 do quadratically many checks. A cheaper way to to note that the above statement
 is equivalent to saying that the set $$\{a_x + x\} \pmod n $$ is equivalent to a
-permutation of the numbers 1 through $$n$$. The following code takes a list of
+permutation of the numbers 0 through $$n-1$$. The following code takes a list of
 integers and does just that.
 
      1 def verify_vanilla(siteswap):
@@ -51,8 +51,8 @@ From this algorithm for verifying a siteswap, we can easily define several ways
 of mutating a siteswap without compromising its validity.
 
 ### Add 1 to Every Number
-If it is the case that $${a_x + x} \pmod n $$ is a permutation of the set $$\{1
-\cdots n\}$$ then adding one to each $$a_x$$ will not modify this property.
+If it is the case that $${a_x + x} \pmod n $$ is a permutation of the set $$\{0
+\cdots n-1\}$$ then adding one to each $$a_x$$ will not modify this property.
 
  - 423 becomes 534
  - 633 becomes 744
