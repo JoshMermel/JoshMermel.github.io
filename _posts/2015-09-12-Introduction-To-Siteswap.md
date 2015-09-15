@@ -27,7 +27,7 @@ objects being thrown then).  In vanilla siteswap, that means at every time unit,
 at most one ball can be caught. Thus, a pattern is forbidden if there exist two
 throws that land at the same time. We can express this formally as follows.
 
-For all siteswaps $$a_0 a_1 \cdots a_n$$,
+For all siteswaps $$a_1 a_2 \cdots a_n$$,
 $$ \forall xi \in \{1 \cdots n\} \forall y \in \{1 \cdots n\},  a_x + x \not
 \equiv a_y + y \pmod n$$
 
