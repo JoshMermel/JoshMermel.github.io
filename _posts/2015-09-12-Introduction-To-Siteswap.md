@@ -147,8 +147,5 @@ We can repeat this process to generate other transitions. A five ball ground
 state siteswap that ends in 44 is 94444.  Therefore we can also enter 933 from 5
 with a 944.
 
-### Computing Transitions Between Vanilla Siteswap
-
-### Extending to Multiplex Siteswaps
-
-### Extending to Sync siteswaps
+How to get an initial transition between two patterns is a somewhat interesting
+question that I think I'll leave for another blog post.
