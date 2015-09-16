@@ -229,8 +229,8 @@ It turns out there were two solutions.
 
 It is clear to me now that a state centric approach with caching of intermediate
 results is the correct method. V1 computed as many as 4 million transitions
-between states. V3 only did work on each state once so it computed at most ~2
-thousand transitions.
+between states. V3 only did work on each state once so it computed at most ~2000
+transitions.
 
 Where We Went Wrong on Paper
 ============================
