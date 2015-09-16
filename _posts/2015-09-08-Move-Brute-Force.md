@@ -21,7 +21,7 @@ you select one cardinal direction and swipe the screen in that direction. All
 dots move one square in that direction unless they are blocked by a wall, an
 obstacle, or another blocked dot.
 
-See consider the following example:
+Consider the following example:
 
 Here is the initial state of the board 
 
