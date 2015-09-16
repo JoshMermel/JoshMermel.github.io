@@ -55,12 +55,11 @@ Trying to Brute Force on Paper
 My strategy to solve the game was to work both forward and backward. Working
 forward it was easy to see that the first move must be up; all other moves have
 no effect. Working backward it was easy to see that the last move must be up as
-well. No state exists such that a left, right or down leads to the goal
-state. From there the options became far more numerous. We met in the middle
-believing we knew all states that could be reached after 4 moves and all states
-that could be reached after 6 moves. We then used heuristics to pairwise rule
-out all the options. We concluded that the board could be solved in at best 11
-moves.
+well. No state exists such that a left, right or down leads to the goal state.
+From there the options became far more numerous. I met in the middle believing
+we knew all states that could be reached after 4 moves and all states that could
+be reached after 6 moves. I then used heuristics to pairwise rule out all the
+options. I concluded that the board could be solved in at best 11 moves.
 
 Solving the game in code
 ========================
