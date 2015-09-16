@@ -170,8 +170,8 @@ branch of the tree (line 13).
 
 ####The Bad
  - No sense of duplicate state
-   - Down-Up on the board resets initial state but this program still tries up
-     to 4^8 sequences beginning with that sequence - none of which are viable
+   - Up then Down on the board resets initial state but this program still tries
+     up to 4^8 sequences beginning with that sequence - none of which are viable
    - Not only that but it computes those paths multiple times, once for each way
      of re-entering the starting state.
  - Needs to know how long the ideal solution is at compile time
