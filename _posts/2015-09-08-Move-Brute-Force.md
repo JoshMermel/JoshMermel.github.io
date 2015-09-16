@@ -154,7 +154,7 @@ decided to return a list of solutions in case there were multiple.
     16                     ret += success
     17         return ret
 
-I made a minor change to my board class here to make the move_* functions truen
+I made a minor change to my board class here to make the move_* functions return
 false if they failed to change the board state (not shown).
 
 The above function then depth first explores a tree where every node holds the
@@ -252,4 +252,4 @@ Open Questions
      fewer than 19 moves!
 4. The two solutions to this puzzle are nearly anagrams.  The first has an extra
    R and the second has an extra D. How far can solutions to the same board be
-   from each other in terms of distrobution of moves?
+   from each other in terms of distribution of moves?
