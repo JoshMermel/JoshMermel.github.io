@@ -39,14 +39,23 @@ this problem for me by letting me consolidate all my terminals under one alt-tab
 entry.
 
 Create a new window
+
     C-b c
+
 Move to next window
+
     C-b n 
+
 Move to previous window
+
     C-b p
+
 Move to window 0 (and so on for other window numbers)
+
     C-b 0 
+
 Rename current window (extra credit)
+
     C-b , 
 
 ## Using Panes
@@ -56,8 +65,14 @@ has one pane for vim where I'm writing this post and another for a terminal
 where I'm running git commands.
 
 Split horizontally
+
     C-b %
+
 Split vertically
+
     C-b \"
+
 Move to a split
+
     C-b [arrow key]
+
