@@ -70,9 +70,16 @@ Split horizontally
 
 Split vertically
 
-    C-b \"
+    C-b "
 
 Move to a split
 
     C-b [arrow key]
 
+## Workflows at this point
+
+## Copy mode and scrollback
+
+## Messing With .tmux.conf
+
+## Using Sessions?
