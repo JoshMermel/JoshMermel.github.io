@@ -51,4 +51,13 @@ Rename current window (extra credit)
 
 ## Using Panes
 Each tmux window can contain a number of panes which are vertical and horizontal
-splits.
+splits. I use these to group highly related tasks. The window I'm in right now
+has one pane for vim where I'm writing this post and another for a terminal
+where I'm running git commands.
+
+Split horizontally
+    C-b %
+Split vertically
+    C-b \"
+Move to a split
+    C-b [arrow key]
