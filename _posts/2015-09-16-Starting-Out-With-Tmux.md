@@ -38,11 +38,11 @@ wanted and sometimes pressed it an incorrect number of times. tmux windows solve
 this problem for me by letting me consolidate all my terminals under one alt-tab
 entry.
 
- - '''C-b c''' to create a new window
- - '''C-b n''' to move to the next window
- - '''C-b p''' to move to the previous window
- - '''C-b 0''' to move to window 0 (and so on for other window numbers)
- - Extra credit: '''C-b ,''' to rename a window
+'''C-b c''' to create a new window
+'''C-b n''' to move to the next window
+'''C-b p''' to move to the previous window
+'''C-b 0''' to move to window 0 (and so on for other window numbers)
+Extra credit: '''C-b ,''' to rename a window
 
 ## Using Panes
 Each tmux window can contain a number of panes which are vertical and horizontal
