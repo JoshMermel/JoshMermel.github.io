@@ -30,13 +30,19 @@ For most purposes, tmux will behave just like your regular terminal except for a
 bar on the bottom listing some information like the date and your hostname. For
 now, scrollback won't work for you (sorry).
 
-## Using Windows
+## Using Windows And Panes
 A reason that tmux was attractive to me was that it let me clean up my alt-tab
 list. When working on projects I usually had a browser, a terminal for building,
 a terminal for testing and a vim window. I had to mash alt-tab to get where I
-wanted and sometimes pressed it an incorrect number of times. tmux windows solve
-this problem for me by letting me consolidate all my terminals under one alt-tab
-entry.
+wanted and sometimes pressed it an incorrect number of times. tmux lets me
+consolidate all My my terminal applications in one place and provides tools for
+organizing them.
+
+Windows are analogous to tabs. By default a window contains a single terminal
+and its name is whatever process is running there. You can optionally rename a
+window with 'C-b ,'
+
+### Some Commands For Windows
 
 Create a new window
 
@@ -58,7 +64,8 @@ Rename current window (extra credit)
 
     C-b , 
 
-## Using Panes
+### Some Commands For Interacting With Panes
+
 Each tmux window can contain a number of panes which are vertical and horizontal
 splits. I use these to group highly related tasks. The window I'm in right now
 has one pane for vim where I'm writing this post and another for a terminal
