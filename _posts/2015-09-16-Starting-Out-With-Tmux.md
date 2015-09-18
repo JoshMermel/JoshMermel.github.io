@@ -107,7 +107,7 @@ Some stuff I do
 Some stuff I don't do
 
  - remap C-b
- - remap % and " to | and - even if it is cute
+ - remap % and " to \| and - even if it is cute
  - use any defalt layouts
 
 ## Using Sessions?
