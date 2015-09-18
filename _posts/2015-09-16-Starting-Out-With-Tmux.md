@@ -38,9 +38,11 @@ wanted and sometimes pressed it an incorrect number of times. tmux lets me
 consolidate all My my terminal applications in one place and provides tools for
 organizing them.
 
-When you start tmux, there will be one window open. Windows in tmux are
-analogous to tabs in many programs. By default each window contains a single
-terminal but as we will soon see they can also do much more.  Windows can be
+Often while coding I would find myself carefully arranging my terminals so each
+one took up just the right amount of space on the screen. tmux solves this
+problem with panes.
+
+When you open tmux, it will show you a single terminal. This terminal can be 
 split with a vertical line down the middle using `C-b %` or split with a
 horizontal line through the middle using `C-b "`. Furthermore, these splits
 (called panes) can be further split with the same commands to generate
@@ -49,10 +51,15 @@ sequence lets tmux know that the next character presses is intended as a command
 to it) and then the arrow key of the direction we want to move in. 
 
 I tend to use panes to group related tasks. Most of the time, all of my panes in
-a given window will be in the same directory
+a given window will be in the same directory. As I write this blog post I have
+one pane with vim running where I'm typing and another where I'm running git
+commands.
 
-and its name is whatever process is running there. You can optionally rename a
-window with `C-b ,`
+In parallel to panes, tmux has the idea of windows which are analogous to tabs
+in most applications. Each window contains an arbitrary number of panes (get
+it). When you open tmux there will be one window by default. Its name will be
+the name of the program you are running in that window
+
 
 ### Some Commands For Windows
 
@@ -73,6 +80,7 @@ Move to window 0 (and so on for other window numbers)
     C-b 0 
 
     C-b z
+`C-b ,`
 
 ## Workflows at this point
 
