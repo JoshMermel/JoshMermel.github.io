@@ -62,9 +62,9 @@ the name of the program you are running in that window. New windows are created
 with `C-b c`. There is a shortcut to kill a window but I tend to just close all
 the panes with `C-d` which closes the window containing them as well.
 
-Windows can be moved to by index with `C-b` and then the index of the window.
-You can also move one window forward with `C-b n` (for next) or one window
-backward with `C-b p`.
+You can move to a window using its index with  `C-b` and then the index of the
+window.  You can also move one window forward with `C-b n` (for next) or one
+window backward with `C-b p`.
 
 I admit, I in a way just did the thing I wanted to not do and wrote a bit list
 of commands. The nice thing about tmux is that it is perfectly usable with a
