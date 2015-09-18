@@ -96,6 +96,17 @@ limitations. What is it so bad? I should see if I can get mousewheel to work
 ## Messing With .tmux.conf
 warn about not resetting defaults to unspecified fields.
 
+Some stuff I do
+ - C-b C-b for last window
+ - mouse
+ - vim keys for movement
+ - swap window position
+ - clearing scrollback
+
+Some stuff I don't do
+ - remap C-b
+ - remap % and " to | and - even if it is cute
+ - use any defalt layouts
 ## Using Sessions?
 I don't do this but its a strength of tmux I guess.
 I probably should start using these...
