@@ -58,29 +58,30 @@ commands.
 In parallel to panes, tmux has the idea of windows which are analogous to tabs
 in most applications. Each window contains an arbitrary number of panes (get
 it). When you open tmux there will be one window by default. Its name will be
-the name of the program you are running in that window
+the name of the program you are running in that window. New windows are created
+with `C-b c`. There is a shortcut to kill a window but I tend to just close all
+the panes with `C-d` which closes the window containing them as well.
 
+Windows can be moved to by index with `C-b` and then the index of the window.
+You can also move one window forward with `C-b n` (for next) or one window
+backward with `C-b p`.
 
-### Some Commands For Windows
+I admit, I in a way just did the thing I wanted to not do and wrote a bit list
+of commands. The nice thing about tmux is that it is perfectly usable with a
+subset of even the ones I've listed here. I recommend picking either panes or
+windows and trying to use that one without the other. Once you feel comfortable
+with that, try incorporating the other one as well.
 
-Create a new window
+### Some Additional Window and Pane Commands
+Here are some lower priority commands that may make windows and panes slightly
+more useful to you. 
 
-    C-b c
+Sometimes a small pane contains long lines that are being wrapped and you wish
+it were larger. `C-b z` zooms in on just that terminal and makes it take up the
+entire tmux window. Repeating this command unzooms. 
 
-Move to next window
-
-    C-b n 
-
-Move to previous window
-
-    C-b p
-
-Move to window 0 (and so on for other window numbers)
-
-    C-b 0 
-
-    C-b z
-`C-b ,`
+Sometimes I forget what is in a window when its title is just "bash" or "vim".
+Windows can be manually renamed with `C-b ,`.
 
 ## Workflows at this point
 
