@@ -55,7 +55,7 @@ a given window will be in the same directory. As I write this blog post I have
 one pane with vim running where I'm typing and another where I'm running git
 commands.
 
-In parallel to panes, tmux has the idea of windows which are analogous to tabs
+In parallel to panes, tmux has the idea of windows, which are analogous to tabs
 in most applications. Each window contains an arbitrary number of panes (get
 it). When you open tmux there will be one window by default. Its name will be
 the name of the program you are running in that window. New windows are created
