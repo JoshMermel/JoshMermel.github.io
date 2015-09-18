@@ -83,10 +83,19 @@ entire tmux window. Repeating this command unzooms.
 Sometimes I forget what is in a window when its title is just "bash" or "vim".
 Windows can be manually renamed with `C-b ,`.
 
+Sometimes tmux's pane layout isn't enough for me and I want to manually resize
+a pane. You do this by holding `C-b` and then pressing an arrow key.
+
 ## Workflows at this point
 
+
 ## Copy mode and scrollback
+Remember when scrollback didn't work. Here is a way to scroll back with
+limitations. What is it so bad? I should see if I can get mousewheel to work
 
 ## Messing With .tmux.conf
+warn about not resetting defaults to unspecified fields.
 
 ## Using Sessions?
+I don't do this but its a strength of tmux I guess.
+I probably should start using these...
