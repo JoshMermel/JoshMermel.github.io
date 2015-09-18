@@ -40,7 +40,7 @@ organizing them.
 
 Windows are analogous to tabs. By default a window contains a single terminal
 and its name is whatever process is running there. You can optionally rename a
-window with 'C-b ,'
+window with `C-b ,`
 
 ### Some Commands For Windows
 
