@@ -38,7 +38,19 @@ wanted and sometimes pressed it an incorrect number of times. tmux lets me
 consolidate all My my terminal applications in one place and provides tools for
 organizing them.
 
-Windows are analogous to tabs. By default a window contains a single terminal
+When you start tmux, there will be one window open. Windows in tmux are
+analogous to tabs in many programs. By default each window contains a single
+terminal but as we will soon see they can also do much more.  Windows can be
+split with a vertical line down the middle using `C-b %` or split with a
+horizontal line through the middle using `C-b "`. Furthermore, these splits
+(called panes) can be further split with the same commands to generate
+relatively complex layouts. Moving between panes is easy, we press `C-b` (this
+sequence lets tmux know that the next character presses is intended as a command
+to it) and then the arrow key of the direction we want to move in. 
+
+I tend to use panes to group related tasks. Most of the time, all of my panes in
+a given window will be in the same directory
+
 and its name is whatever process is running there. You can optionally rename a
 window with `C-b ,`
 
@@ -60,28 +72,7 @@ Move to window 0 (and so on for other window numbers)
 
     C-b 0 
 
-Rename current window (extra credit)
-
-    C-b , 
-
-### Some Commands For Interacting With Panes
-
-Each tmux window can contain a number of panes which are vertical and horizontal
-splits. I use these to group highly related tasks. The window I'm in right now
-has one pane for vim where I'm writing this post and another for a terminal
-where I'm running git commands.
-
-Split horizontally
-
-    C-b %
-
-Split vertically
-
-    C-b "
-
-Move to a split
-
-    C-b [arrow key]
+    C-b z
 
 ## Workflows at this point
 
