@@ -9,7 +9,8 @@ The reason that Vim is my text editor of choice is because Vim commands are
 composable. Each command has a verb and an object so every time I learn a new
 verb, I already know how to use it with each object. Whenever I learn a new
 object I already have a lexicon of verbs to use with it. This idea is summarized
-well in this article.
+well in [this article]
+(https://medium.com/@mkozlows/why-atom-cant-replace-vim-433852f4b4d1).
 
 ## The notion of [count]
 
