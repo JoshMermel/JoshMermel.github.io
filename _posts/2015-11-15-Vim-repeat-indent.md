@@ -13,7 +13,7 @@ well in this article.
 ## The notion of [count]
 A feature of many Vim commands is that they optionally accept a count. This
 number tells the command how many times it should happen. For example, to go
-down five lines, you could hit j five time. Or you could hit 5j. This feature
+down five lines, you could hit `j` five time. Or you could hit `5j`. This feature
 lets you cut down on key mashing and get right to the meat of text editing.
 
 ## >> 
@@ -31,38 +31,39 @@ To my surprise, this command indented the next three lines by one shiftwidth
 each. If I had wanted that I would have used 2>j. I tried several variations on
 these commands and found that >2j and >3> both did the same thing.
 
-Looking at the Vim help documentation (:help <<), I found that this behaviour was
-documented. 
+Looking at the Vim help documentation (`:help <<`), I found that this behaviour
+was documented. 
 
-> <<      Shift [count] lines one 'shiftwidth' leftwards.
+`<<      Shift [count] lines one 'shiftwidth' leftwards.`
 
 Here I also found some sequences that did I wanted - shift the current line
-right by three shift widths. A
+right by three shift widths.
 
-> {Visual}[count]>  Shift the highlighted lines [count] 'shiftwidth'
+`> {Visual}[count]>  Shift the highlighted lines [count] 'shiftwidth'`
 
-So one solution to my original problem is v3>>. This distinction doesn't feel
+So one solution to my original problem is `v3>>`. This distinction doesn't feel
 good to me. It feels like a waste of entering visual mode and there is no
 intuition why the effect is different in visual versus normal.
 
-> :[range]> {count} [flags]
->       Shift {count} lines one 'shiftwidth' right, starting
->       with [range] (default current line |cmdline-ranges|).
->       Repeat '>' for shifting multiple 'shiftwidth's.
->       See |ex-flags| for [flags].
+```
+:[range]> {count} [flags]
+      Shift {count} lines one 'shiftwidth' right, starting
+      with [range] (default current line |cmdline-ranges|).
+      Repeat '>' for shifting multiple 'shiftwidth's.
+```
 
-Another solution is to use command mode. :>>> indents the current line by 3.
+Another solution is to use command mode. `:>>>` indents the current line by 3.
 This sequence also feels bad to me. 
 
 ## Similarities to y and closing
-The y command (copy) has very similar semantics to the > command. In normal mode
-[count]yy yanks [count] lines. In visual mode, [count]yy yanks the selected text
+The `y` command (copy) has very similar semantics to the `>` command. In normal mode
+`[count]yy` yanks [count] lines. In visual mode, `[count]yy` yanks the selected text
 (we can think of this as happening [count] times for convenience.) 
 
-However for the y command, repeating an action on the same line doesn't do
+However for the `y` command, repeating an action on the same line doesn't do
 anything.  With the indent action, repeating several time on the same line makes
-sense and is sometimes desirable.  The interaction of [count] and > in normal
+sense and is sometimes desirable. The interaction of [count] and `>` in normal
 mode is well documented and consistent. I feel that a doccumented design mistake
 is still a mistake. In the grand scheme of things it is pretty minor but I think
-it would be more intuitive and more in the spirit of Vim of [count]>> indented
+it would be more intuitive and more in the spirit of Vim of `[count]>>` indented
 one line count times.
