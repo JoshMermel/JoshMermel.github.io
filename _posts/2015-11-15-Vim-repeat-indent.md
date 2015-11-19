@@ -33,8 +33,8 @@ particular action before but with my understanding of [count] I assumed the
 right thing to do was `3>>`.
 
 To my surprise, this command indented the next three lines by one shiftwidth
-each. If I had wanted that I would have used `2>j`. I tried several variations
-on these commands and found that `>2j` and `>3>` both did the same thing.
+each. If I had wanted that I would have used `>2j`. I tried several variations
+on these commands and found that `2>j` and `>3>` both did the same thing.
 
 Looking at the Vim help documentation (`:help <<`), I found that this behaviour
 was documented. 
