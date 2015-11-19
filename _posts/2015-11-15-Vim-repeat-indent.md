@@ -15,15 +15,16 @@ well in this article.
 
 A feature of many Vim commands is that they optionally accept a count. This
 number tells the command how many times it should happen. For example, to go
-down five lines, you could hit `j` five time. Or you could hit `5j`. This feature
-lets you cut down on key mashing and get right to the meat of text editing.
+down five lines, you could hit `j` five time. Or you could hit `5j`. This
+feature lets you cut down on key mashing and get right to the meat of text
+editing.
 
 ## >> 
 
 The `>` command is a verb that can be read "indent by one line." It take a
 motion and indents everything between the cursor and the destination by one
-line. Some examples are `>ip` for "indent all lines of this paragraph" or `gg>G`
-for "indent the whole file by one shiftwidth"
+shiftwidth. Some examples are `>ip` for "indent all lines of this paragraph" or
+`gg>G` for "indent the whole file by one shiftwidth"
 
 ## Weirdness with [count]>>
 
