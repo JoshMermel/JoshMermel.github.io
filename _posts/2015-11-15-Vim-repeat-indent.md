@@ -34,7 +34,7 @@ these commands and found that >2j and >3> both did the same thing.
 Looking at the Vim help documentation (`:help <<`), I found that this behaviour
 was documented. 
 
-`<<      Shift [count] lines one 'shiftwidth' leftwards.`
+`>>      Shift [count] lines one 'shiftwidth' rightward.`
 
 Here I also found some sequences that did I wanted - shift the current line
 right by three shift widths.
