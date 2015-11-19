@@ -72,4 +72,4 @@ sense and is sometimes desirable. The interaction of [count] and `>` in normal
 mode is well documented and consistent. I feel that a doccumented design mistake
 is still a mistake. In the grand scheme of things it is pretty minor but I think
 it would be more intuitive and more in the spirit of Vim of `[count]>>` indented
-one line count times.
+the current line count times.
