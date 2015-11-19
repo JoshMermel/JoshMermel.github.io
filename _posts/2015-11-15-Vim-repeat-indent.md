@@ -39,7 +39,7 @@ was documented.
 Here I also found some sequences that did I wanted - shift the current line
 right by three shift widths.
 
-`> {Visual}[count]>  Shift the highlighted lines [count] 'shiftwidth'`
+`{Visual}[count]>  Shift the highlighted lines [count] 'shiftwidth'`
 
 So one solution to my original problem is `v3>>`. This distinction doesn't feel
 good to me. It feels like a waste of entering visual mode and there is no
