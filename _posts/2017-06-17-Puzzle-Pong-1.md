@@ -340,10 +340,14 @@ I challenge James to solve the following puzzle:
 >
 > To formalize the rules slightly.
 > 1. Numbers must appear in order, each exactly once.
-> 2. You may not take the factorial of a factorial (i.e. 3!! = 720).
+> 2. You may not take the factorial of a factorial (i.e. (3!)! = 720).
 > 3. Concatination is forbidden (i.e. 1 + 23 + 4 + 5).
 
 
 > Bonus problem - For what list of five integers (all less than ten), is the
 > answer to this puzzle the smallest? If this is not unique, please provide all
 > lists which have the lowest non-expressable value.
+
+> Bonus bonus problem - What list of five positive integers has the smallest sum
+> and cannot construct 1. Again, if there is more than one list with this
+> minimal sum, please provide all of them.
