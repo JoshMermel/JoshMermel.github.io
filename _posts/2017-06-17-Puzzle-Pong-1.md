@@ -34,7 +34,7 @@ Then construct a map from set-of-characters to the count of how many times I've
 seen that set. Lastly I'd iterate over the map and pick the set with the best
 ratio.
 
-###Implementation details
+### Implementation details
 
 The representation of character sets is critical to making this program
 performant. I chose to implement them in C++ as bit sets inside a uint32\_t. I
@@ -86,7 +86,7 @@ This lets the compiler use CPU specific instructions when counting the number of
 In practice, this program spends a minority of its time counting the sizes of
 sets so the benefit is minimal.
 
-###Putting it all together
+### Putting it all together
 
      1  int main() {
      2    // Key is a bit set encoding the characters of a string.
@@ -161,7 +161,7 @@ dictionary 32 bit ints, but this time, loop over the all 2^26 sets of characters
 and see what their ratio is. This is not elegant but I was confident it would
 get me the correct answer.
 
-###Implementation details
+### Implementation details
 
 This approach mostly reused helper functions from the previous one. The only new
 function I needed was for determining if one bit set was a subset of another.
@@ -182,7 +182,7 @@ A coworker pointed out the much more elegant:
 
 Both of these only use a handful of assembly instructions.
 
-###Putting it all together
+### Putting it all together
 
 
      1  int main() {
@@ -250,11 +250,11 @@ efficiently iterate over all subsets of a bit set. I mentioned this to a
 coworker and he suggested I check out the chess programming wiki. Apparently,
 chess programs use bit sets for internal representations so this wiki has lots of
 helpful functions for doing computations in bit sets. Indeed, it has a page on
-[Traversing Subsets of a Set](https://chessprogramming.wikispaces.com/Traversing+Subsets+of+a+Set)
+[Traversing Subsets of a Set](https://chessprogramming.wikispaces.com/Traversing+Subsets+of+a+Set).
 
 Armed with this, I modified my solution from approach 2 into the following:
 
-###Putting it all together
+### Putting it all together
 
      1  int main() {
      2    // For sets with many characters.
