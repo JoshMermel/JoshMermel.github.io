@@ -337,7 +337,7 @@ I challenge James to solve the following puzzle:
 > -  [https://www.youtube.com/watch?v=ukUkVaOyI0o](https://www.youtube.com/watch?v=ukUkVaOyI0o)
 > -  [https://www.youtube.com/watch?v=-ruC5A9EzzE](https://www.youtube.com/watch?v=-ruC5A9EzzE)
 >
-> To formalize the rules sleightly.
+> To formalize the rules slightly.
 > 1. Numbers must appear in order, each exactly once.
 > 2. You may not take the factorial of a factorial (i.e. 3!! = 720).
 > 3. Concatination is forbidden (i.e. 1 + 23 + 4 + 5).
