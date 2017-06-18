@@ -331,7 +331,7 @@ I challenge James to solve the following puzzle:
 > 2 = 1 + (((2 + 3) * 4!) / 5!)
 > ...
 >
-> What is the smallest integer that cannot be written this way?
+> What is the smallest positive integer that cannot be written this way?
 >
 > For some inspiration, please enjoy:
 > -  [https://www.youtube.com/watch?v=ukUkVaOyI0o](https://www.youtube.com/watch?v=ukUkVaOyI0o)
