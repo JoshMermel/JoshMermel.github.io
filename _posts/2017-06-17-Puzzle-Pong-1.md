@@ -333,8 +333,8 @@ I challenge James to solve the following puzzle:
 > What is the smallest integer that cannot be written this way?
 >
 > For some inspiration, please enjoy:
-> -  https://www.youtube.com/watch?v=ukUkVaOyI0o
-> -  https://www.youtube.com/watch?v=-ruC5A9EzzE
+> -  [https://www.youtube.com/watch?v=ukUkVaOyI0o](https://www.youtube.com/watch?v=ukUkVaOyI0o)
+> -  [https://www.youtube.com/watch?v=-ruC5A9EzzE](https://www.youtube.com/watch?v=-ruC5A9EzzE)
 >
 > To formalize the rules sleightly.
 > 1. Numbers must appear in order, each exactly once.
