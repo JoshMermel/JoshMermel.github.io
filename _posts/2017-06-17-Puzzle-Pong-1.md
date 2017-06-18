@@ -230,6 +230,11 @@ This code runs in about 25 minutes at produces the answer:
 abcdefghiklmnorstuvwy. That is to say, all characters except {'j', 'q', 'x',
 'y'}. Upon reflection, this isn't such a surprising answer.
 
+This program's memory use is quite nice. I allocate one 32 bit int for each word
+in the dictionary and a handful to temp and accumulation variables. The memory
+use scales linearly with the size of the dictionary and is not effected by the
+number of characters in the language.
+
 Performancewise, this solution leaves a lot to be desired. For each of 2^26 sets
 of characters, I am looping for ~100,000 words in the dictionary. What if there
 was a way to do less work for each character set...?
@@ -308,6 +313,14 @@ Armed with this, I modified my solution from approach 2 into the following:
 This program runs in about 16 minutes and produces the same answer as my second
 one. I'm sure more improvements are possible but overall I'm much happier with
 this design.
+
+On the negative side, this approach uses more memory than the previous one. As
+before, it allocates a 32 bit int for each word in the dictionary; but now it
+additionally allocates a 32 bit int for each possible subset of the alphabet.
+This amount of memory scales exponentially with the number of characters!
+Luckily for me 26 characters corresponds to about 250 megabytes which is a
+manageable amount. If English had 32 characters then my laptop would not have
+had enough RAM to allocate such a map.
 
 One interesting feature I'd like to point out is choice of 14 in line 22. Log
 base 2 of 100,000 is around 16.6 so my initial guess for this value was 16. This
