@@ -317,3 +317,30 @@ practice, I get best performance with this threshold at 14. My suspicion is
 that this is a cache locality issue. Looping over a vector probably has
 favorable cache behavior but indexing into a table probably has more cache
 misses.
+
+## Conclusion
+
+I challenge James to solve the following puzzle:
+
+> Given the list of numbers [1, 2, 3, 4, 5] unlimited parentheses, and the
+> operations {+, -, *, /, ^, !}, it is possible to construct many integers. For
+> example, 
+>
+> 1 = 1 + 2 - 3 - 4 + 5
+> 2 = 1 + (((2 + 3) * 4!) / 5!)
+> ...
+>
+> What is the smallest integer that cannot be written this way?
+>
+> For some inspiration, please enjoy:
+> -  https://www.youtube.com/watch?v=ukUkVaOyI0o
+> -  https://www.youtube.com/watch?v=-ruC5A9EzzE
+>
+> To formalize the rules sleightly.
+> 1. Numbers must appear in order, each exactly once.
+> 2. You may not take the factorial of a factorial (i.e. 3!! = 720).
+> 3. Concatination is forbidden (i.e. 1 + 23 + 4 + 5).
+> 
+> Bonus problem - For what list of five integers (all less than ten), is the
+> answer to this puzzle the smallest? If this is not unique, please provide all
+> lists which have the lowest non-expressable value.
