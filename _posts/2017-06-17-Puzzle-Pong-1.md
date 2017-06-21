@@ -228,7 +228,7 @@ Both of these only use a handful of assembly instructions.
 
 This code runs in about 25 minutes at produces the answer:
 abcdefghiklmnorstuvwy. That is to say, all characters except {'j', 'q', 'x',
-'y'}. Upon reflection, this isn't such a surprising answer.
+'z'}. Upon reflection, this isn't such a surprising answer.
 
 This program's memory use is quite nice. I allocate one 32 bit int for each word
 in the dictionary and a handful to temp and accumulation variables. The memory
@@ -355,6 +355,7 @@ I challenge James to solve the following puzzle:
 > 1. Numbers must appear in order, each exactly once.
 > 2. You may not take the factorial of a factorial (i.e. (3!)! = 720).
 > 3. Concatination is forbidden (i.e. 1 + 23 + 4 + 5).
+> 4. Unary negative is forbidder (i.e. 13 = (-1) + 2 + 3 + 4 + 5
 
 
 > Bonus problem - For what list of five integers (all less than ten), is the
