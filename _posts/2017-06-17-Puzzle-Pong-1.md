@@ -342,7 +342,7 @@ I challenge James to solve the following puzzle:
 > 1 = 1 + 2 - 3 - 4 + 5
 >
 > 2 = 1 + (((2 + 3) * 4!) / 5!)
-
+>
 > 3 = ...
 >
 > What is the smallest positive integer that cannot be written this way?
