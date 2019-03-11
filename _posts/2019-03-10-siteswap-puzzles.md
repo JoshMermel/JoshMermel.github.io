@@ -51,7 +51,7 @@ the novelty of the puzzle was fun but too much of the solve was tedious
 bookkeeping and not enough was clever inference. I decided that I’d had my fun
 with this project and mostly forgot about it for 5 month.
 
-# variations
+# Variations
 
 Out of nowhere, I realized that there are some valid sudoku solutions which are
 also valid in my puzzle. I decided to see if I could use this to make a more
@@ -162,8 +162,9 @@ td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; paddin
   <tbody>
    <tr> <td> 1 <td> 5 <td> 3 <td> 4 <td> 8 <td> 6 <td> 7 <td> 2 <td> 9
    <tr> <td> 2 <td> 9 <td> 7 <td> 5 <td> 3 <td> 1 <td> 8 <td> 6 <td> 4
-   <tr> <td> 6 <td> 4 <td> 8 <td> 9 <td> 7 <td> 2 <td> 3 <td> 1 <td> 5
+   <tr> <td> 6 <td> 4 <td> 8 <td> 9 <td> 7 <td> 2 <td> 3 <td> 1 <td> 5 </td> </tr>
 </table>
+
 
 Once I knew that this could happen, I found that it happened to a lesser degree
 pretty often.  I never found a nice way to exclude solved puzzles with too much
