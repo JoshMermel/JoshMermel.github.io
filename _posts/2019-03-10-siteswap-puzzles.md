@@ -86,7 +86,7 @@ My strategy here was the same as before - write a solution counter for unsolved
 puzzles and use it to remove values while keeping the solution unique. I did
 this mostly by reusing the ConsiderBoard() method. 
 
-As a fun side effect, that meant I could comment out the sudoku constraints and
+As a fun side effect, that meant I could comment out the siteswap constraints and
 my program would generate unsolved sudoku puzzles. Or I could comment out the
 sudoku rules and my program would generate unsolved siteswap puzzle. Or any
 combination of constraints!
