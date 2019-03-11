@@ -147,8 +147,10 @@ still ran in under a second. I decided it was easier to just filter these out by
 hand.  This is another thing I’d need to revisit if I were trying to publish
 more than a handful of puzzles.
 
-So far, I've published 3 puzzles, an easy, a medium, and a hard, also to my
-instagram. All 3 are unsolvable if you only use sudoku type inference but have
-unique solution if you use both sudoku and siteswap rules. I’ve been mailed one
-correct solution to the easy puzzle.  I plan to publish another trio of puzzles
-with sudoku row/col rules removed but sudoku 3x3 cell rules still present.
+So far, I've [published 3 puzzles](https://www.instagram.com/p/BusjJ_dAwgU/), an
+easy, a medium, and a hard, also to my instagram. All 3 are unsolvable if you
+only use sudoku type inference but have unique solution if you use both sudoku
+and siteswap rules. I’ve been mailed one correct solution to the easy puzzle.  I
+also plan to publish another trio of puzzles with sudoku row/col rules removed
+but sudoku 3x3 cell rules still present. This is yet another novel solving
+experience that is worth trying once but probably not twice.
