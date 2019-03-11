@@ -119,7 +119,7 @@ mean of the number of guesses. This doesn’t look at all like how humans solve
 puzzles but the average number of guesses trended upward as pre-populated cells
 went away so it approximated something related to difficulty.
 
-What I found was that the number of guesses sometimes had interesting points
+What I found was that the number of guesses sometimes had notable points
 where number of guesses jumped from <10 to >20. I tried to see if there was
 anything interesting about these points but didn’t think they were that
 different as a human. Also at some point the number of guesses max out at around
@@ -132,7 +132,7 @@ something, I’d need to think a lot more critically about this.
 
 I asked my roommate to test one of the puzzles for me and he quickly spotted a
 pattern I hadn’t. I was so focused on how I expected the puzzle to be solved
-that I didn’t notice some recurring patterns. In this case, {4,6,8}, {2,7,9},
+that I didn’t notice some recurring structure. In this case, {4,6,8}, {2,7,9},
 and {1,3,5} always appeared contiguously in rows. In additon to that, {4,5,9},
 {3,7,8}, and {1,2,6} always appear contiguously in columns. In fact, there are
 only 3 distinct 3x3 blocks in this solution.
