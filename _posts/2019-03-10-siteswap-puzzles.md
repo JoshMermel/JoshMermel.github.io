@@ -147,7 +147,6 @@ colgroup, tbody { border: solid medium; }
 td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
 </style>
 <table>
-  <caption>Sudoku of the day</caption>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
@@ -163,6 +162,7 @@ td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; paddin
    <tr> <td> 1 <td> 5 <td> 3 <td> 4 <td> 8 <td> 6 <td> 7 <td> 2 <td> 9
    <tr> <td> 2 <td> 9 <td> 7 <td> 5 <td> 3 <td> 1 <td> 8 <td> 6 <td> 4
    <tr> <td> 6 <td> 4 <td> 8 <td> 9 <td> 7 <td> 2 <td> 3 <td> 1 <td> 5 </td> </tr>
+  </tbody>
 </table>
 
 
@@ -174,6 +174,7 @@ hand.  This is another thing I’d need to revisit if I were trying to publish
 more than a handful of puzzles.
 
 So far, I've published 3 puzzles, an easy, a medium, and a hard, also to my
-instagram. I’ve been mailed one correct solution to the easy puzzle.  I plan to
-publish another trio of puzzles with sudoku row/col rules removed but sudoku 3x3
-cell rules still present.
+instagram. All 3 are unsolvable if you only use sudoku type inference but have
+unique solution if you use both sudoku and siteswap rules. I’ve been mailed one
+correct solution to the easy puzzle.  I plan to publish another trio of puzzles
+with sudoku row/col rules removed but sudoku 3x3 cell rules still present.
