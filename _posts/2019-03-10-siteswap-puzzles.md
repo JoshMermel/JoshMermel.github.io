@@ -7,13 +7,11 @@ title: Siteswap Puzzles
 
 In October, 2018, I had the idea to make a puzzle in the shape of a crossword
 puzzle where all the “words” are replaced by sitewaps. For more info on siteswap
-validation, I previously wrote a [blog post on that topic]
-(http://joshmermelstein.com/Introduction-To-Siteswap/). I tried to generate a
+validation, I previously wrote a [blog post on that topic](http://joshmermelstein.com/Introduction-To-Siteswap/). I tried to generate a
 solved puzzle by hand but had way more trouble than I expected.
 
 I decided to use the only crossword generation tool I knew about - the [one
-James Buckland wrote in response to a puzzle I gave him]
-(http://jbuckland.com/puzzle-pong-i/). His program takes a dictionary and
+James Buckland wrote in response to a puzzle I gave him](http://jbuckland.com/puzzle-pong-i/). His program takes a dictionary and
 generates all n x n squares such that all the rows and columns are valid words.
 All I had to do was generate a list of all siteswaps with length 6 and pass that
 in as the dictionary. This worked perfectly and I had a huge list of all valid
@@ -44,8 +42,7 @@ board that wasn’t obviously invalid (some cell has 0 possibilities), it called
 itself recursively. I considered trying to pick unsolved cells in some clever
 way but the code already ran so quickly that it didn’t seem worth it.
 
-I ended up [publishing one of these puzzles to my instagram]
-(https://www.instagram.com/p/BofY05ZnluX/) and was sent one correct solution. I
+I ended up [publishing one of these puzzles to my instagram](https://www.instagram.com/p/BofY05ZnluX/) and was sent one correct solution. I
 chatted with the solver a bit and their opinions were really similar to mine -
 the novelty of the puzzle was fun but too much of the solve was tedious
 bookkeeping and not enough was clever inference. I decided that I’d had my fun
@@ -87,7 +84,7 @@ tiny fraction of a second.
 
 My strategy here was the same as before - write a solution counter for unsolved
 puzzles and use it to remove values while keeping the solution unique. I did
-this mostly by reusing the CondierBoard() method. 
+this mostly by reusing the ConsiderBoard() method. 
 
 As a fun side effect, that meant I could comment out the sudoku constraints and
 my program would generate unsolved sudoku puzzles. Or I could comment out the
