@@ -138,30 +138,7 @@ and {1,3,5} always appeared contiguously in rows. In additon to that, {4,5,9},
 only 3 distinct 3x3 blocks in this solution.
 
 
-<style>
-table { border-collapse: collapse; font-family: Calibri, sans-serif; }
-colgroup, tbody { border: solid medium; }
-td { border: solid thin; height: 1.4em; width: 1.4em; text-align: center; padding: 0; }
-</style>
-<table>
-  <colgroup><col><col><col>
-  <colgroup><col><col><col>
-  <colgroup><col><col><col>
-  <tbody>
-   <tr> <td> 4 <td> 8 <td> 6 <td> 7 <td> 2 <td> 9 <td> 1 <td> 5 <td> 3
-   <tr> <td> 5 <td> 3 <td> 1 <td> 8 <td> 6 <td> 4 <td> 2 <td> 9 <td> 7
-   <tr> <td> 9 <td> 7 <td> 2 <td> 3 <td> 1 <td> 5 <td> 6 <td> 4 <td> 8
-  <tbody>
-   <tr> <td> 7 <td> 2 <td> 9 <td> 1 <td> 5 <td> 3 <td> 4 <td> 8 <td> 6
-   <tr> <td> 8 <td> 6 <td> 4 <td> 2 <td> 9 <td> 7 <td> 5 <td> 3 <td> 1
-   <tr> <td> 3 <td> 1 <td> 5 <td> 6 <td> 4 <td> 8 <td> 9 <td> 7 <td> 2
-  <tbody>
-   <tr> <td> 1 <td> 5 <td> 3 <td> 4 <td> 8 <td> 6 <td> 7 <td> 2 <td> 9
-   <tr> <td> 2 <td> 9 <td> 7 <td> 5 <td> 3 <td> 1 <td> 8 <td> 6 <td> 4
-   <tr> <td> 6 <td> 4 <td> 8 <td> 9 <td> 7 <td> 2 <td> 3 <td> 1 <td> 5 </td> </tr>
-  </tbody>
-</table>
-
+<img src="/images/siteswap_puzzle/symmetry.png" style="max-height: 400px"> 
 
 Once I knew that this could happen, I found that it happened to a lesser degree
 pretty often.  I never found a nice way to exclude solved puzzles with too much
