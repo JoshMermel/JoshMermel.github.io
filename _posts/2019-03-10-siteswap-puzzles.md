@@ -7,15 +7,18 @@ title: Siteswap Puzzles
 
 In October, 2018, I had the idea to make a puzzle in the shape of a crossword
 puzzle where all the “words” are replaced by sitewaps. For more info on siteswap
-validation, I previously wrote a [blog post on that topic](http://joshmermelstein.com/Introduction-To-Siteswap/). I tried to generate a
-solved puzzle by hand but had way more trouble than I expected.
+validation, I previously wrote a 
+[blog post on that topic](http://joshmermelstein.com/Introduction-To-Siteswap/).
+ I tried to generate a solved puzzle by hand but had way more trouble than I
+expected.
 
-I decided to use the only crossword generation tool I knew about - the [one
-James Buckland wrote in response to a puzzle I gave him](http://jbuckland.com/puzzle-pong-i/). His program takes a dictionary and
-generates all n x n squares such that all the rows and columns are valid words.
-All I had to do was generate a list of all siteswaps with length 6 and pass that
-in as the dictionary. This worked perfectly and I had a huge list of all valid
-6x6 grid.
+I decided to use the only crossword generation tool I knew about - the 
+[one
+James Buckland wrote in response to a puzzle I gave him](http://jbuckland.com/puzzle-pong-i/).
+ His program takes a dictionary and generates all n x n squares such that all
+the rows and columns are valid words.  All I had to do was generate a list of
+all siteswaps with length 6 and pass that in as the dictionary. This worked
+perfectly and I had a huge list of all valid 6x6 grids.
 
 Now that I had all these solved puzzles, I needed to generate unsolved puzzles.
 I did some research on how sudoku are generated. Sudoku is a pretty mature
@@ -42,11 +45,13 @@ board that wasn’t obviously invalid (some cell has 0 possibilities), it called
 itself recursively. I considered trying to pick unsolved cells in some clever
 way but the code already ran so quickly that it didn’t seem worth it.
 
-I ended up [publishing one of these puzzles to my instagram](https://www.instagram.com/p/BofY05ZnluX/) and was sent one correct solution. I
-chatted with the solver a bit and their opinions were really similar to mine -
-the novelty of the puzzle was fun but too much of the solve was tedious
-bookkeeping and not enough was clever inference. I decided that I’d had my fun
-with this project and mostly forgot about it for 5 month.
+I ended up 
+[publishing one of these puzzles to my instagram](https://www.instagram.com/p/BofY05ZnluX/)
+ and was sent one correct solution. I chatted with the solver a bit and their
+opinions were really similar to mine - the novelty of the puzzle was fun but too
+much of the solve was tedious bookkeeping and not enough was clever inference. I
+decided that I’d had my fun with this project and mostly forgot about it for 5
+month.
 
 # Variations
 
@@ -63,7 +68,7 @@ filled in. Rather that early returning when more than one solution is found, my
 puzzle generator would early return the first time it found any solution will
 all cells filled in. One other difference from the earlier solver is that I
 iterated over possible values for a cell in random order. This was just in case
-iterating in value order introduced some bias. I’m not sure this matter but the
+iterating in value order introduced some bias. I’m not sure this matters but the
 overhead is so small that I don’t care.
 
 The heart of my generator was a function called ConsiderBoard(). It took a
