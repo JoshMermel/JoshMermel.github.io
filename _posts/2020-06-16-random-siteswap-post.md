@@ -3,20 +3,24 @@ layout: post
 title: Animating 3 handed juggling
 ---
 
+tl;dr https://joshmermelstein.com/random-siteswap generates very random
+siteswaps. Read on to learn how it works.
+
 Background
 ==========
 
 When James Buckland and I were working on
 [juggling-graph](https://jbuckland.com/juggling-graph/), I sent him a worksheet
-from one of Matt Hall's workshops to use for interesting examples. He turned
-that list into the "Random" button on that site. That button got me wondering -
-how would be generate siteswaps at random?
+from one of [Matt Hall's workshops](http://jugglesensei.net/workshops.html) to
+use for interesting examples. He turned that list into the "Random" button on
+that site. That button got me wondering - how would be generate siteswaps at
+random?
 
 I did a bit of research and found 
 [a post from Jack Boyce](https://groups.google.com/forum/#!topic/rec.juggling/IVuHX_bDsNY),
  the author of jugglinglab. In it, he references 
 [this post from 1998](https://groups.google.com/forum/#!msg/rec.juggling/KdkPFy8qDP0/fFYbpL4XxWsJ)
-containing the following code snippet.
+containing the following code:
 
 ```
 /* gentest.c       Bijective siteswap generator        */
@@ -83,8 +87,8 @@ void main(int argc, char **argv) {
 His code works as expected, but I couldn't figure out why it worked so I didn't
 know how to extend it to support sync or multiplex patterns. Luckily, I did
 recognize the name "Michael Kleber" from the header comment - I know him through
-my work! I invited Michael to coffee, and he gave me exactly the explanation I
-was looking for.
+my work! Michael agreed to meet for coffee, and he gave me exactly the
+explanation I was looking for.
 
 Cards Model of Vanilla Siteswap
 ===============================
@@ -98,7 +102,7 @@ cards (with replacement). Here's an example:
 
 <img src="/images/random-siteswap/ex1.png" style="max-height: 400px">
 
-I've colored in various arrow to make things easier to explain. The first thing
+I've colored in various arrow to make things easier to follow. The first thing
 to notice is that every beat has one arrow "landing" on the bottom, and other
 arrow emerging from the bottom to some height. This is just like the conditions
 that make a siteswap valid.
@@ -107,15 +111,15 @@ The other thing to notice is that the cards divide space into evenly sized
 chunks. So we can count how many beats each arrow spends in the "air" before it
 lands back at the bottom of any card. If we do this for each arrow, we get the
 numbers {7, 2, 2, 3, 6}. And in fact, these cards can be viewed as a
-representation of the siteswap:
+representation of the siteswap 72236.
 
 <img src="/images/random-siteswap/72236.png" style="max-height: 400px">
 
 So why is this cards model useful to us? Well every arrangement of cards is a
 valid siteswap - and every siteswap has exactly one arrangement of cards. This
 simplifies the problem from "generating random siteswaps" to "generating random
-sequences of cards".
-
+sequences of cards". And we can represent each card with the height its arrow
+rises up to; so now we just need to generate a random list of positive integers.
 
 Extending to Sync
 =================
@@ -141,11 +145,16 @@ of height 3 (ignoring the order that balls exit a multiplex).
 
 <img src="/images/random-siteswap/3_height.png" style="max-height: 400px">
 
-## problems with multiplicity
+Now that more than one arrow can hit the ground in a card, we need to modify our
+constraint on sync card pairs. The new constraint is the "the lowest height on
+the first half of a card must be higher than the number of arrows coming out of
+the second card. As before, this guarantees that no 0x's will appear.
 
-With those cards, there are 4 from the vanilla deck, and 4 new ones - so if we
-pick randomly then we have a 50/50 shot of introducing a multiplex. But what
-happens as the height goes up?
+## Problems with multiplicity
+
+Of the 8 multiplex cards shown above, there are 4 from the vanilla deck, and 4
+new ones - so if we pick randomly then we have a 50/50 shot of introducing a
+multiplex. But what happens as the max arrow height goes up?
 
 Well when there are n heights to choose from, there are 2^n possible cards, and
 only n+1 are vanilla. When N is large, that's a tiny fraction!
