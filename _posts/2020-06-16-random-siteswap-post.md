@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animating 3 handed juggling
+title: Very Random Siteswaps
 ---
 
 tl;dr https://joshmermelstein.com/random-siteswap generates very random
