@@ -95,12 +95,12 @@ Cards Model of Vanilla Siteswap
 
 First, we define a set of cards that look like this:
 
-<img src="/images/random-siteswap/example-cards.png" style="max-height: 400px">
+<img src="/_images/random-siteswap/example-cards.png" style="max-height: 400px">
 
 We're going to generate our random siteswaps by drawing from a deck of these
 cards (with replacement). Here's an example:
 
-<img src="/images/random-siteswap/ex1.png" style="max-height: 400px">
+<img src="/_images/random-siteswap/ex1.png" style="max-height: 400px">
 
 I've colored in various arrow to make things easier to follow. The first thing
 to notice is that every beat has one arrow "landing" on the bottom, and other
@@ -113,7 +113,7 @@ lands back at the bottom of any card. If we do this for each arrow, we get the
 numbers {7, 2, 2, 3, 6}. And in fact, these cards can be viewed as a
 representation of the siteswap 72236.
 
-<img src="/images/random-siteswap/72236.png" style="max-height: 400px">
+<img src="/_images/random-siteswap/72236.png" style="max-height: 400px">
 
 So why is this cards model useful to us? Well every arrangement of cards is a
 valid siteswap - and every siteswap has exactly one arrangement of cards. This
@@ -131,7 +131,7 @@ pair of vanilla cards to represent each sync beat but we nee to be careful. If
 the second card was a 1, that would turn the first throw into a 0x. Here's an
 example of a hand of sync cards.
 
-<img src="/images/random-siteswap/2x8x6x4x.png" style="max-height: 400px">
+<img src="/_images/random-siteswap/2x8x6x4x.png" style="max-height: 400px">
 
 Can you tell what siteswap this is? Check the name of the image for help.
 
@@ -143,7 +143,7 @@ arrow to rise from the bottom of each card, and we also make sure that the same
 number of arrow go to the bottom of each card. For example, here are all cards
 of height 3 (ignoring the order that balls exit a multiplex).
 
-<img src="/images/random-siteswap/3_height.png" style="max-height: 400px">
+<img src="/_images/random-siteswap/3_height.png" style="max-height: 400px">
 
 Now that more than one arrow can hit the ground in a card, we need to modify our
 constraint on sync card pairs. The new constraint is the "the lowest height on
