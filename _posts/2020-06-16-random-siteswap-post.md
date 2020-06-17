@@ -3,8 +3,8 @@ layout: post
 title: Very Random Siteswaps
 ---
 
-tl;dr https://joshmermelstein.com/random-siteswap generates very random
-siteswaps. Read on to learn how it works.
+tl;dr [https://joshmermelstein.com/random-siteswap](https://joshmermelstein.com/random-siteswap)
+generates very random siteswaps. Read on to learn how it works.
 
 Background
 ==========
