@@ -3,7 +3,7 @@ Mathematics. I now live in Boston, MA and work at Google. I use this website to
 host blog posts on ideas I had and a handful of javascript tools I made.
 
  - Juggling Tools
-   - [juggle-suggest2](https://joshmermelstein.com/juggle-suggest2/):
+   - [juggle-suggest2](https://joshmermelstein.com/juggle-suggest2/)
       - Autocompletion as you type for valid async and sync siteswaps.
    - [3hand](https://joshmermelstein.com/3hand/)
      -  Translates vanilla siteswaps
