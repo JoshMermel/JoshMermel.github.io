@@ -17,7 +17,7 @@ dodecahedron. I was able to apply some of my knowledge from the Rubik's Cube to
 the megaminx but got stuck on the last layer. Even though the puzzles were quite
 similar, I didn't understand what the seemingly-magic algorithms from my
 brother's notes so I was lost when it came to adapting them to a new situation.
-Eventually I ended up lookup up a solution online so I could solve the puzzle
+Eventually I ended up looking up a solution online so I could solve the puzzle
 and at the time that felt satisfying.
 
 Rediscovery
@@ -83,8 +83,8 @@ speed, move count, or ergonomics. Instead, it is optimized understandability and
 ease of memorization.
 
 Notably, the two algorithms are lengths 4 and 8. This is in sharp contrast with
-cfop which contains 15+ move algorithms in even the (intermediate
-versions)[http://speedcubedb.com/a/3x3/PLL].
+cfop which contains 15+ move algorithms in even the [intermediate
+versions](http://speedcubedb.com/a/3x3/PLL).
 
 ### What I value in a solution
 
@@ -99,6 +99,7 @@ with just 2 algorithms. Ideally I would like my solutions to:
  - Be easy to remember
  - Be easy to execute without errors
  - Be flexible
+ - Be understandable or even intuitive
  - Avoid long or tedious algorithms
  - Avoid large numbers of algorithms
  - Have some room for creativity to combine or skip steps
@@ -111,7 +112,7 @@ Getting back to the story of my experiences with twisty puzzles, I wanted to
 stop learning solutions from others and start coming up with my own. There are
 many ways to do this but one common one is based on the group theory idea of a
 commutator. There's quite a lot to say here so instead of writing it all, I'll
-link you to [This video](https://www.youtube.com/watch?v=-NL76uQOpI0) from
+link you to [this video](https://www.youtube.com/watch?v=-NL76uQOpI0) from
 Mathologer who does quite a good job.
 
 Assuming you watched that video - you now know how to come up with your own
@@ -164,4 +165,6 @@ think I'm missing out on ideas that I could be learning from others.
 Many of my solutions were written down on scratch paper and were probably lost.
 So moving forward, when I find a solution that I'm happy with, I'm going to try
 to document it on this blog for posterity. I may also do some smaller posts on
-misc puzzle ideas I had that I think are worth recording.
+misc puzzle ideas I had that I think are worth recording. These posts will not
+be tutorial and will probably be written for an audience that is already
+familiar with puzzles.
