@@ -111,9 +111,9 @@ Techniques for Designing Solutions
 Getting back to the story of my experiences with twisty puzzles, I wanted to
 stop learning solutions from others and start coming up with my own. There are
 many ways to do this but one common one is based on the group theory idea of a
-commutator. There's quite a lot to say here so instead of writing it all, I'll
+commutator. There's a lot to say here so instead of writing it all, I'll
 link you to [this video](https://www.youtube.com/watch?v=-NL76uQOpI0) from
-Mathologer who does quite a good job.
+Mathologer who does a pretty good job.
 
 Assuming you watched that video - you now know how to come up with your own
 solutions! So why am I writing a blog post about this? Well Mathologer glosses
