@@ -15,10 +15,10 @@ Later, my parents bought me a [megaminx](https://wikipedia.org/wiki/Megaminx) -
 a puzzle that is a lot like a Rubik's cube except that it's based around a
 dodecahedron. I was able to apply some of my knowledge from the Rubik's Cube to
 the megaminx but got stuck on the last layer. Even though the puzzles were quite
-similar, I didn't understand what the seemingly-magic algorithms from my
-brother's notes so I was lost when it came to adapting them to a new situation.
-Eventually I ended up looking up a solution online so I could solve the puzzle
-and at the time that felt satisfying.
+similar, I didn't understand the seemingly-magic algorithms from my brother's
+notes so I was lost when it came to adapting them to a new situation. Eventually
+I ended up looking up a solution online so I could solve the puzzle and at the
+time that felt satisfying.
 
 Rediscovery
 ===========
