@@ -223,8 +223,8 @@ or pretty.
    is impossibly tangled.
  - [0x182800008](https://joshmermelstein.com/bandaged-cube-explorer?id=0x182800008)
    has nice 4-way symmetry
- - [0x63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x63) looks like
-   a face to me.
+ - [0xc63](https://joshmermelstein.com/bandaged-cube-explorer?id=0xc63) looks
+   like a face to me.
  - [30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203)
    looks like 4 connected rings.
  - [0x8000802005A0](https://joshmermelstein.com/bandaged-cube-explorer/?id=0x8000802005A0)
