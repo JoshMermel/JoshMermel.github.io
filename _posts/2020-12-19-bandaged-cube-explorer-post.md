@@ -62,8 +62,9 @@ The platform I chose was d3.js's force directed layout. The idea is that each
 node is given a slight negative charge and each edge is given a slight spring
 force. The charge means that nodes spread out away from each other and the
 spring force means that connected nodes stay near each other. For many graphs,
-this sort of layout does a good job at both global and local layout. Best of all
-- d3.js supports a huge amount of customization and a huge number of features.
+this sort of layout does a good job at both global and local layout. Best of
+all, d3.js supports a huge amount of customization and a huge number of
+features.
 
 I decided to avoid labels on nodes or edges because I was worried they would
 make the graph unreadable as it grew. Instead I decided to color code my edges
