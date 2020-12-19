@@ -181,10 +181,10 @@ that point at. My arrowhead code was copied from a stackoverflow answer so I'll
 need to understand it to modify it.
 
 Many graphs contain states that there's no reason to visit. For an example,
-let's take a look at the graph for the cube in the [youtube
-video](https://joshmermelstein.com/bandaged-cube-explorer?id=0xE0400B43FC5A1)
-from the top of this post. The graph has some chains for 4-cycles that look
-almost like lace:
+let's take a look at the graph for [the
+cube](https://joshmermelstein.com/bandaged-cube-explorer?id=0xE0400B43FC5A1) in
+the youtube video from the top of this post. The graph has some chains for
+4-cycles that look almost like lace:
 
 <img src="/images/bandaged-cube-explorer/lace.png" style="max-height: 400px">
 
