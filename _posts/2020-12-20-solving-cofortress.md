@@ -12,13 +12,14 @@ cubes and suggested that it might be useful for solvers. In this post, I'm going
 to walk through how I how I used it to solve one bandaged configuration,
 [0x20108000000C03](https://joshmermelstein.com/bandaged-cube-explorer/?id=0x20108000000C03).
 
+<img src="/images/cofortress/photo.png" style="max-height: 400px">
+
+<img src="/images/cofortress/unfolded.png" style="max-height: 400px">
+
 I decided to name this puzzle "cofortress" since its shape graph has the same
 structure as the one for Bandaged Fortress (a.k.a.
 [0x30000010048883](https://joshmermelstein.com/bandaged-cube-explorer/?id=0x30000010048883))
 
-<img src="/images/cofortress/photo.jpg" style="max-height: 400px">
-
-<img src="/images/cofortress/unfolded.png" style="max-height: 400px">
 
 Analyzing the cube
 ==================
