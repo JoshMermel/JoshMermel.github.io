@@ -283,7 +283,7 @@ footer {
   text-align: center;
 }
 
-article.post > table {
+table {
       display: block;
       width: 100%;
       overflow: auto;
@@ -291,22 +291,22 @@ article.post > table {
       margin-bottom: 20px;
 }
 
-article.post > table th {
+table th {
       font-weight: bold;
 }
 
-article.post > table th,
-article.post > table td {
+table th,
+table td {
       padding: 6px 13px;
       border: 1px solid #ddd;
 }
 
-article.post > table tr {
+table tr {
       background-color: #fff;
       border-top: 1px solid #ccc;
 }
 
-article.post > table tr:nth-child(2n) {
+table tr:nth-child(2n) {
       background-color: #f8f8f8;
 }
 
