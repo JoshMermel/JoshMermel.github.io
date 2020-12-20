@@ -327,32 +327,3 @@ how different the solve feels from an unbandaged 3x3x3.
 I'm also happy with how my bandaged-cube-explorer tool guided my solve. It
 certainly would have been possible without the toil but I think it would've
 added a lot of toil with adding much enjoyment.
-
-<style>
-  table {
-        display: block;
-        width: 100%;
-        overflow: auto;
-        margin-top: 10px;
-        margin-bottom: 20px;
-  }
-
-  table th {
-        font-weight: bold;
-  }
-
-  table th,
-  table td {
-        padding: 6px 13px;
-        border: 1px solid #ddd;
-  }
-
-  table tr {
-        background-color: #fff;
-        border-top: 1px solid #ccc;
-  }
-
-  table tr:nth-child(2n) {
-        background-color: #f8f8f8;
-  }
-</style>
