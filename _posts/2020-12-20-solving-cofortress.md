@@ -163,7 +163,7 @@ blocks and two unbandaged edges so let's apply them to a cube and see which
 edges are swapped. To keep these compact, I'm using the twisty puzzles shorthand
 for conjugates, `[A : B] = A B A^-1` where A and B are arbitrary sequences.
 
-Here are 7 sequences that swap the two 1x1x3 blocks and also swap a pair of
+Here are 9 sequences that swap the two 1x1x3 blocks and also swap a pair of
 edges without modifying their orientation.
 
 <table>
@@ -223,7 +223,7 @@ edges without modifying their orientation.
 </tbody>
 </table>
 
-Next we have 2 sequences that swap the two 1x1x3 blocks and also swap a pair of
+Next we have 3 sequences that swap the two 1x1x3 blocks and also swap a pair of
 edges and also modify the orientation of both swapped edges.
 
 <table>
