@@ -102,7 +102,7 @@ the corners and edges both have a position and an orientation on the cube. Its
 possible to put all pieces in the correct position, but have some 3-sticker
 corners twisted or some 2-sticker edges flipped in place.
 
-<img src="/images/cofortress/fliped.jpg" style="max-height: 400px">
+<img src="/images/cofortress/flipped.jpg" style="max-height: 400px">
 
 On cofortress, the constraints imposed by the bandaging mean that when we are in
 solved shape, or corners are always oriented correctly. In the first draft of
