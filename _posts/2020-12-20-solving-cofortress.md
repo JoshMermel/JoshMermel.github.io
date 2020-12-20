@@ -242,7 +242,7 @@ edges and also modify the orientation of both swapped edges.
   </tr>
   <tr>
     <td>flip 2</td>
-    <td>[D R2 U2 L F2 R2 B D2 B2 D R2 D2 R B2 L2: F2]</td>
+    <td>[B2 U2 F' L2 B2 R D2 R2 : D2]</td>
     <td>UF, FL</td>
   </tr>
   <tr>
