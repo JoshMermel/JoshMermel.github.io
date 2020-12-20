@@ -16,7 +16,7 @@ I decided to name this puzzle "cofortress" since its shape graph has the same
 structure as the one for Bandaged Fortress (a.k.a.
 [0x30000010048883](https://joshmermelstein.com/bandaged-cube-explorer/?id=0x30000010048883))
 
-<img src="/images/cofortress/photo.jpg" style="max-height: 400px">
+<img src="/images/cofortress/photo.png" style="max-height: 400px">
 
 <img src="/images/cofortress/unfolded.png" style="max-height: 400px">
 
