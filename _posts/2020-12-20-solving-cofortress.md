@@ -325,7 +325,7 @@ organized, it only takes a few minutes to scramble and solve it. I really like
 how different the solve feels from an unbandaged 3x3x3.
 
 I'm also happy with how my bandaged-cube-explorer tool guided my solve. It
-certainly would have been possible without the toil but I think it would've
+certainly would have been possible without the tool but I think it would've
 added a lot of toil with adding much enjoyment.
 
 <style>
