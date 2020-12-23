@@ -69,7 +69,11 @@ out to be almost the same challenge as solving the shape.
 
 Looking closely at our shape graph, each state has either one or two faces that
 can turn. That means that we can walk the loop (without needing to see it) by
-always turning a different face than the one we turned previously.
+always turning a different face than the one we turned previously. Even better,
+we use the "half turn, half turn, quarter turn" pattern to guide us. The first
+half turn will always effect just one of the 1x1x3 blocks. The second half turn
+will effect the other, then the quarter turn will be on the face that now
+contains both of them.
 
 I case you'd like something a big less handwavey, here's a sequence to follow
 for scrambling cofortress:
@@ -88,9 +92,9 @@ that even one repeat of this sequence is a decent scramble but feel free to go
 through it a few time.
 
 When it comes to returning cofortress to its solved shape, the procedure is
-similar. Make turns on different faces until the shape space is solve - or find
-your state on bandaged-cube-explorer and follow the path to the shape-solved
-state.
+similar to the scramble. Put both 1x1x3 blocks on the same face, then follow the
+"half turn, half turn, quarter turn" sequence until both are solved relative to
+the centers.
 
 Edge Orientation
 ================
@@ -286,6 +290,8 @@ this is an optional optimization.
 </tbody>
 </table>
 
+// TODO(jmerm): notes on omitted sequences and why.
+
 Using the Sequences
 ===================
 
@@ -317,8 +323,8 @@ This is exactly the same as perm 5 except with the last L' replace by an L. So
 if you know the next several sequences you are going to do, you can optionally
 save moves and time by predicting which moves will cancel and omitting them.
 
-Final Thoughts
-==============
+Final Thoughts on Cofortress
+============================
 
 I quite enjoyed solving cofortress. Now that I have my method and notes
 organized, it only takes a few minutes to scramble and solve it. I really like
@@ -327,6 +333,8 @@ how different the solve feels from an unbandaged 3x3x3.
 I'm also happy with how my bandaged-cube-explorer tool guided my solve. It
 certainly would have been possible without the tool but I think it would've
 added a lot of toil with adding much enjoyment.
+
+// TODO(jmerm): notes on solving Bandaged Fortress.
 
 <style>
   table {
