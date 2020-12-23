@@ -89,7 +89,7 @@ U2 R2 D*
 
 Where * means either a clockwise or counterclockwise quarter turn. I've found
 that even one repeat of this sequence is a decent scramble but feel free to go
-through it a few time.
+through it a few times.
 
 When it comes to returning cofortress to its solved shape, the procedure is
 similar to the scramble. Put both 1x1x3 blocks on the same face, then follow the
