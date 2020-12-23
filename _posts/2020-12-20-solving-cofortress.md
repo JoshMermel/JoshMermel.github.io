@@ -349,11 +349,13 @@ quarter turn" until the puzzle is solved by shape, orient all edges, then
 permute all edges.
 
 When I feel like coming back to this sort of bandaged puzzle, I think I may try
+one of
+[0x20100000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x20100000000C03)
+or
 [0x30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203)
-next. This severs one of the bonds in cofortress resulting in a with a similar
-structure but 4x as many states. I suspect the extra freedom will add some new
-challenges but keep the overall feel of the solve. Also the graph is very
-pretty.
+next. The first one severs one of the bonds in cofortress resulting in a graph with a
+second loop. The latter one takes it a step further and moves a block to allow
+for 4x as many states as cofortress, arranged into 4 connected loops.
 
 <style>
   table {
