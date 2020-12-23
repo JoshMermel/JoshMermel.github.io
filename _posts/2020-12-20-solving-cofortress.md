@@ -339,7 +339,20 @@ I'm also happy with how my bandaged-cube-explorer tool guided my solve. It
 certainly would have been possible without the tool but I think it would've
 added a lot of toil with adding much enjoyment.
 
-// TODO(jmerm): notes on solving Bandaged Fortress.
+Bandaged Fortress
+=================
+
+A small update - since writing this post I spent an evening analyzing and
+solving bandaged fortress. As expected, the solve feels very similar to
+cofortress. My solve's outline looks the same - follow "half turn, half turn,
+quarter turn" until the puzzle is solved by shape, orient all edges, then
+permute all edges.
+
+When I feel like coming back to this sort of bandaged puzzle, I think I may try
+[0x30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203)
+next. This severs one of the bonds in cofortress resulting in a graph 4x as many
+nodes but a similar structure of being a big loop. I suspect the extra freedom
+will add some new challenges but keep the overall feel of the solve.
 
 <style>
   table {
