@@ -50,15 +50,15 @@ choose to take our quarter turns. It happens to be the case that this effect is
 nothing; so when cofortress is solved by shape, our 1x1x2 blocks and unbandaged
 corners are always solved by color.
 
-What is left for us to solve are the 9 pieces on cofortress that can be
-effectively scrambled:
+What is left for us to solve are the 9 pieces on cofortress that can move around
+when the puzzle is solved by shape:
 
  - The two 1x1x3 blocks can swap with each other
  - The {UF, UL, BL, FL, FR, DL, DR} edges
 
-When cofortress is solved by shape, a D2 move swaps the 1x1x3 blocks, so now
-we're down to two remaining challenges; getting to the solved shape, and finding
-ways to move edges around in the solved shape.
+But wait - when cofortress is solved by shape, a D2 move swaps the 1x1x3 blocks.
+So now we're down to two remaining challenges; getting to the solved shape, and
+finding ways to move unbandaged edges around in the solved shape.
 
 Solving the shape (and scrambling the puzzle)
 =============================================
