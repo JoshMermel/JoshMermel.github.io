@@ -350,9 +350,10 @@ permute all edges.
 
 When I feel like coming back to this sort of bandaged puzzle, I think I may try
 [0x30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203)
-next. This severs one of the bonds in cofortress resulting in a graph 4x as many
-nodes but a similar structure of being a big loop. I suspect the extra freedom
-will add some new challenges but keep the overall feel of the solve.
+next. This severs one of the bonds in cofortress resulting in a with a similar
+structure but 4x as many states. I suspect the extra freedom will add some new
+challenges but keep the overall feel of the solve. Also the graph is very
+pretty.
 
 <style>
   table {
