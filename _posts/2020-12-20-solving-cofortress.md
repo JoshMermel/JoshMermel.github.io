@@ -290,7 +290,12 @@ this is an optional optimization.
 </tbody>
 </table>
 
-// TODO(jmerm): notes on omitted sequences and why.
+Careful readers might have noticed that some of these sequences differ only by
+the direction of a quarter turn (i.e. perm 6 vs perm 7). But there are some
+variations of these algorithms that aren't listed above. The sequences that I
+omitted are because they have the same effect as a sequence in the table. For
+example, replacing the D in sequence 3 with a D' doesn't change which pieces are
+swapped so including it would be redundant.
 
 Using the Sequences
 ===================
