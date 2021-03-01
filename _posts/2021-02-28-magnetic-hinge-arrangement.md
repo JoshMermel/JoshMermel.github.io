@@ -46,8 +46,8 @@ Embracing Randomness
 Rather than try to be clever with constructing these sequences, I decided to do
 a whole lot of guess, test, and revise. I wrote a bit of C++ to do so:
 
-The first one generates sequences made up of |symbols| different values and of
-length |len|.
+The first one generates sequences made up of \|symbols\| different values and of
+length \|len\|.
 
     std::vector<int> make_candidate(int symbols, int len) {
       std::vector<int> ret(len, 0);
