@@ -122,8 +122,8 @@ Wrap Up
 =======
 
 Having done all this, I plugged my results into OEIS, and found [this
-sequence](https://oeis.org/A053439) whose is the same as my problem except it
-cares only about the length of the sequence and not about its construction. The
-programs there to calculate it suggest some sort of counting argument that could
-maybe be converted into a construction but I'm not sure there's enough detail
-for me to do so.
+sequence](https://oeis.org/A053439) whose description is the same as my problem
+except it cares only about the length of the sequence and not about its
+construction. The programs there to calculate it suggest some sort of counting
+argument that could maybe be converted into a construction but I'm not sure
+there's enough detail for me to do so.
