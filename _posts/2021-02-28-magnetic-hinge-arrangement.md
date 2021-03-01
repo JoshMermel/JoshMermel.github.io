@@ -27,7 +27,7 @@ Analysis
 We can put some upper and lower bounds on the length of a minimal sequence as
 follows:
 
-Upper bound: given N objects, there are C(N,2) = n\*(n-1)/2 pairs that need to
+Upper bound: given N objects, there are C(N,2) = N\*(N-1)/2 pairs that need to
 be accounted for. One sequence that satisfies our question is "all pairs printed
 one after another". For example, when n=4, our sequence might be 121314232434.
 This sequence has length N\*(N-1).
