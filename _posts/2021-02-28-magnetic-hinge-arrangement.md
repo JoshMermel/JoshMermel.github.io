@@ -105,10 +105,15 @@ By combining these techniques and doing a lot of trials, I came up with the
 following results:
 
 4: 12324314
+
 5: 12342541531 (hits lower bound)
+
 6: 123453463142615256
+
 7: 1234537257182413847851 (hits lower bound)
+
 8: 12342562754783581641748673158263
+
 9: 1234354256768419467461829351372586289638715975
 
 Wrap Up
