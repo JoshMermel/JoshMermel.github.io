@@ -80,6 +80,10 @@ From there, I just ran trials continuously until I got results I liked. By
 tweaking the lengths of the sequences I was generating, I could slowly hone in
 on the optimal length.
 
+A nice feature of this approach is that nothing needs to be remembered from
+trial to trial. This means the program uses very little memory and can be left
+running as long as I am willing to wait.
+
 For small values of N, this worked quite well. But as N got to 7 or 8, valid
 sequences became harder and harder to find. I decided to up the length of
 sequence I was checking to increase the chances of finding valid sequences but
