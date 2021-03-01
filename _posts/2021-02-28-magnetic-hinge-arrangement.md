@@ -13,6 +13,8 @@ magnetic protrusions along each edge. The protrusions on each cube are arranged
 so that when any pair of cubes are connected edge-to-edge, they form a magnetic
 hinge.
 
+<img src="/images/magnet-hinges/123_to_abc.jpg" style="max-height: 400px">
+
 Oskar's puzzle has three cubes, but I was curious what arrangements one might
 use if designing this puzzle with an arbitrary number of cubes. This boils down
 to the question: Arrange the numbers 1-N into a sequence with duplicates allowed
