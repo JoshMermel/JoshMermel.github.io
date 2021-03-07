@@ -75,7 +75,7 @@ this:
 
     create two queues of states to explore
     create two a set for states seen by the forward exploration and another for backward
-    while (neither queue is empty) {
+    while (either queue is nonempty) {
       explore the state at the front of the forward queue as in BFS
       when you look at new nodes, also check if they are in the set of states seen by the backward exploration
     
@@ -142,7 +142,7 @@ other one. After the refactor, the code was structured like this:
     create two queues of states to explore
     create two a set for states seen by the forward exploration and another for backward
     target_depth = 1
-    while (neither queue is empty) {
+    while (either queue is nonempty) {
       explore forward as in BFS until you've seen all nodes distance target_depth from the start
       when you look at new nodes, also check if they are in the set of states seen by the backward exploration
 
