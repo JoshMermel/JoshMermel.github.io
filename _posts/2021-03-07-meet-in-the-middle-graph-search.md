@@ -141,15 +141,15 @@ other one. After the refactor, the code was structured like this:
 
     create two queues of states to explore
     create two a set for states seen by the forward exploration and another for backward
-    target\_depth = 1
+    target_depth = 1
     while (neither queue is empty) {
-      explore forward as in BFS until you've seen all nodes distance target\_depth from the start
+      explore forward as in BFS until you've seen all nodes distance target_depth from the start
       when you look at new nodes, also check if they are in the set of states seen by the backward exploration
 
-      explore backward as in BFS until you've seen all nodes distance target\_depth from the end
+      explore backward as in BFS until you've seen all nodes distance target_depth from the end
       when you look at new nodes, also check if they are in the set of states seen by the forward exploration
 
-      increment target\_length
+      increment target_length
     }
 
 Future Work
