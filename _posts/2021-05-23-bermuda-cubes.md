@@ -69,9 +69,9 @@ tried resulted in useful 3-cycles!
 
 <img src="/images/bermuda/34_algos.png" style="max-height: 400px">
 
-- left: [(R U R' U')3, R^-1.5 U2 R^1.5]
+- left: [(R U R' U')3, R^-1.5 U' R^1.5]
 - middle: [(R U R' U')3, R^-1.5 U R^1.5]
-- right: [(R U R' U')3, R^-1.5 U' R^1.5]
+- right: [(R U R' U')3, R^-1.5 U2 R^1.5]
 
 These cubes are tilted a bit to show the outcomes better. These should be
 executed with the orange face on U and the white face on R, starting with the
@@ -87,10 +87,11 @@ For corner orientation, I also wanted to find a sequence that would work with
 only two turnable faces. Starting with a square face on U and a triangle face on
 R (orientated the same as my permutation algorithms), I realized I could execute
 a [Sune](https://www.speedsolving.com/wiki/index.php/Sune). After a bit of
-fiddling, I found that three Sunes in a row had no effect on edges and did a
-swapped the corners of the square face with their diagonals while reorienting
-just one of those pairs. That meant I could do a U2 and another triple-Sune to
-swap the corners back but end up with two of them orientated differently.
+fiddling, I found that three Sunes in a row had no effect on edges and
+swapped the corners of the square face with their diagonals. One pair's
+orientation was unchanged while the other pair was twisted. That meant I could
+do a U2 and another triple-Sune to swap the corners back to their original
+positions but end up with one diagonal pair orientated differently.
 
 <img src="/images/bermuda/34_corner_orientation_algos.png" style="max-height: 400px">
 
@@ -112,7 +113,7 @@ realized my mistake. Even though that puzzle has two square-centered faces,
 neither of them is able to turn. Hilariously, the edge in between them is
 mechanically functional, it's just impossible to unblock either face and
 actually move it. This meant all my nice ideas about triangle/square algorithms
-wasn't applicable.
+were not applicable.
 
 I was pretty happy with my centers, edges, corners solve order and I liked the
 flexibility that I got from an algorithm that only needed two turnable faces; so
