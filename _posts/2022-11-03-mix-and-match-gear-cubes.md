@@ -70,8 +70,7 @@ The Hybrids
 ===========
 
 As is often the case, I'm not the first one with this idea. Andreas Nortmann
-(enumatered seven
-variations)[https://twistypuzzles.com/forum/viewtopic.php?p=239636#p239636]. 
+(enumatered seven variations)[https://twistypuzzles.com/forum/viewtopic.php?p=239636#p239636]. 
 
 "There are no more than 7 different variants. These are:
 
