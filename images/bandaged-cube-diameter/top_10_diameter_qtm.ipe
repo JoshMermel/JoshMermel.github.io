@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20221217203729" modified="D:20221217230126"/>
+<info created="D:20221217203729" modified="D:20221221072329"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -604,7 +604,7 @@ h
 320 656 l
 h
 </path>
-<text matrix="1 0 0 1 168 -464" transformations="translations" pos="240 640" stroke="black" type="label" width="19.649" height="6.918" depth="0" valign="baseline">todo</text>
+<text matrix="1 0 0 1 168 -464" transformations="translations" pos="240 640" stroke="black" type="label" width="82.192" height="6.808" depth="0" valign="baseline">0x21000102000C43</text>
 <path matrix="1 0 0 1 176 -464" stroke="black">
 112 768 m
 112 592 l
@@ -1117,8 +1117,64 @@ h
 192 192 l
 </path>
 <path stroke="black">
-96 384 m
+112 384 m
 208 384 l
+</path>
+<path stroke="black">
+352 272 m
+400 272 l
+</path>
+<path stroke="black">
+384 272 m
+384 160 l
+</path>
+<path stroke="black">
+400 160 m
+352 160 l
+</path>
+<path stroke="black">
+368 160 m
+368 208 l
+</path>
+<path stroke="black">
+352 176 m
+400 176 l
+</path>
+<path stroke="black">
+304 224 m
+496 224 l
+</path>
+<path stroke="black">
+496 208 m
+336 208 l
+</path>
+<path stroke="black">
+320 208 m
+304 208 l
+</path>
+<path stroke="black">
+320 240 m
+320 192 l
+</path>
+<path stroke="black">
+336 240 m
+336 192 l
+</path>
+<path stroke="black">
+352 256 m
+400 256 l
+</path>
+<path stroke="black">
+416 240 m
+416 192 l
+</path>
+<path stroke="black">
+432 240 m
+432 192 l
+</path>
+<path stroke="black">
+464 224 m
+464 208 l
 </path>
 </page>
 </ipe>

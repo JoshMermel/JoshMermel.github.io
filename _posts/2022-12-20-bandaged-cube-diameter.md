@@ -78,14 +78,14 @@ configurations that are special in some way.
 
 0x1003FE80000423 has by far the largest diameter, in both QTM and HTM.
 
-<img src="/images/bandaged-cube-diameter/0x1003fe80000423_overview.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/0x1003fe80000423_overview.svg" style="max-height: 400px">
 
 Note that the 'x' over the white center means that this face is never allowed to
 turn. In QTM, 0x2003FD00041830 and 0x1003F680104444 are a whopping 167 moves
 apart (note that these two are mirror images of one another). This cube also has
 the largest diameter in HTM, 127.
 
-<img src="/images/bandaged-cube-diameter/0x1003fe80000423_worst.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/0x1003fe80000423_worst.svg" style="max-height: 400px">
 
 I was quite surprised to see how small the graph for this configuration is. It
 has just 3780 vertices. Some configurations have over 20x as many vertices and
@@ -102,12 +102,12 @@ can't handle that.
 Luckily, the configuration with the second largest diameter in both QTM and
 HTM, 0x83fe04000c21, does not have the same limitation.
 
-<img src="/images/bandaged-cube-diameter/0x83fe04000c21_overview.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/0x83fe04000c21_overview.svg" style="max-height: 400px">
 
 This configuration has a QTM diameter of 120 (example 0x83BE04021182 to
 0x188c30c4204441) and an HTM diameter of 96.
 
-<img src="/images/bandaged-cube-diameter/0x83fe04000c21_worst.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/0x83fe04000c21_worst.svg" style="max-height: 400px">
 
 This configuration also has a surprisingly small graph. It has a mere 2704
 vertices.
@@ -140,7 +140,7 @@ As you can see, QTM diameter and HTM diameter are not totally correlated so here
 9. 0x1084308420063D (#9 above)
 10. 0x139200800C1C (QTM: 94, HTM: 75)
 
-<img src="/images/bandaged-cube-diameter/top_10_diameter_htm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/top_10_diameter_htm.svg" style="max-height: 400px">
 
 For more information on these configurations, such as examples of pairs of nodes
 that are the maximum distance apart, see the [raw
@@ -167,7 +167,7 @@ and
 Both have 110 vertices and a QTM diameter of 12. I suspect they're actually the
 same puzzle in disguise as two different configurations.
 
-<img src="/images/bandaged-cube-diameter/max_qtm_over_htm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/max_qtm_over_htm.svg" style="max-height: 400px">
 
 All the others have either a much smaller vertex count and/or a smaller diameter
 (e.g.
@@ -175,7 +175,7 @@ All the others have either a much smaller vertex count and/or a smaller diameter
 [0x100586802C3421](https://joshmermelstein.com/bandaged-cube-explorer?id=0x100586802C3421),
 [0x10818085ADB42D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10818085ADB42D)).
 
-<img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.svg" style="max-height: 400px">
 
 Another group that jumped out at me are {
 [0x320084200C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x320084200C63),
@@ -185,7 +185,7 @@ Another group that jumped out at me are {
 } have QTM diameter=45 and HTM diameter=25. They also all have 96 vertices and
 132 edges.
 
-<img src="/images/bandaged-cube-diameter/high_qtm_over_htm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/high_qtm_over_htm.svg" style="max-height: 400px">
 
 ## Low QTM/HTM
 
@@ -203,13 +203,13 @@ The largest of these by vertex count are
 [0x10000000000002](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10000000000002),
 (240, and a diameter of 5).
 
-<img src="/images/bandaged-cube-diameter/min_qtm_over_htm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/min_qtm_over_htm.svg" style="max-height: 400px">
 
 A few other configurations that stood out to me are:
 0x10000084018421 (2540 vertices, QTM diameter 18, HTM diameter 17)
 0x108401843DCC21 (1130 vertices, QTM diameter 64, HTM diameter 56)
 
-<img src="/images/bandaged-cube-diameter/low_qtm_over_htm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/low_qtm_over_htm.svg" style="max-height: 400px">
 
 # Is vertex count a good predictor of diameter?
 
@@ -219,14 +219,14 @@ There are many examples of graphs with relatively low vertex count but large
 diameter, e.g. 0x21000100008C43 (726 vertices, QTM diameter of 95) and
 0x100C00808005AD (482 vertices, 73 QTM diameter).
 
-<img src="/images/bandaged-cube-diameter/low_vertex_high_diameter.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/low_vertex_high_diameter.svg" style="max-height: 400px">
 
 There are also plenty of examples of graphs with a high vertex count but
 relatively low diameter, such as 0x8000000804 (a.k.a “3 stripes”) (1296`
 vertices, QTM diameter of 8), and 0x20008000000806 (7344 vertices, QTM diameter
 of 14).
 
-<img src="/images/bandaged-cube-diameter/high_vertex_low_diameter.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/high_vertex_low_diameter.svg" style="max-height: 400px">
 
 # Looking at diameter / vertex count
 
@@ -238,7 +238,7 @@ and
 tended to have extremely constrainted graphs, (click through to see them). Their
 graphs have almost no branching and I suspect these puzzles can barely scramble.
 
-<img src="/images/bandaged-cube-diameter/diameter_over_vertex.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/diameter_over_vertex.svg" style="max-height: 400px">
 
 Puzzles were this metric was small were ones with the largest vertex counts,
 and didn't have particularly interesting diameters.
@@ -265,6 +265,6 @@ all connected to each other, plus so not-too-useful looking long dead ends.
 scramble pretty well though and would make for a challenging and highly
 constrained solve.
 
-<img src="/images/bandaged-cube-diameter/bonus.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 400px">
 
 # Closing thoughts
