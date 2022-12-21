@@ -125,7 +125,7 @@ Rounding out the top ten diameters (ordered by QTM), we have:
 9. 0x1084308420063D (QTM: 101, HTM: 75)
 10. 0x21000102000C43 (QTM: 100, HTM: 59)
 
-<img src="/images/bandaged-cube-diameter/top_10_diameter_qtm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/top_10_diameter_qtm.svg" style="max-height: 400px">
 
 ## Top 10 (HTM)
 
