@@ -89,11 +89,13 @@ the largest diameter in HTM, 127.
 
 I was quite surprised to see how small the graph for this configuration is. It
 has just 3780 vertices. Some configurations have over 20x as many vertices and
-yet have dramatically smaller diameters!
+yet have dramatically smaller diameters! (note: it's still large enough to lag
+bandaged-cube-explorer. In this blog post, I'll only deeplink to graphs that are
+small enough to render nicely on mobile).
 
-At first, I found the bandaged white center on this cube a little unsatisfying, because my
-usual tools for playing with bandaged 3x3x3 puzzles (a cubetwist bandaged kit or
-the [Magic Cube
+At first, I found the bandaged white center on this cube a little unsatisfying,
+because my usual tools for playing with bandaged 3x3x3 puzzles (a cubetwist
+bandaged kit or the [Magic Cube
 app](https://play.google.com/store/apps/details?id=org.distorted.magic)) both
 can't handle that. Then I checked the diameter of this configuration with the
 white center unlocked and found that it does not change!
@@ -115,7 +117,8 @@ vertices.
 
 ## Top 10 (QTM)
 
-Rounding out the top ten diameters (ordered by QTM), we have:
+After this, QTM and HTM disagree about which configurations are largest. Here
+are the remainder of the top 10 in QTM:
 
 3) 0x10000080800C63 (QTM: 117, HTM: 73)
 4) 0x21109308C00C46 (QTM: 115, HTM: 90)
@@ -130,7 +133,7 @@ Rounding out the top ten diameters (ordered by QTM), we have:
 
 ## Top 10 (HTM)
 
-As you can see, QTM diameter and HTM diameter are not totally correlated so here’s the rest of the top 10 by HTM:
+And here is the rest of the top 10 in HTM:
 
 3) 0x108430C40007A3 (#5 above)
 4) 0x21109308C00C46 (#4 above)
@@ -145,9 +148,7 @@ As you can see, QTM diameter and HTM diameter are not totally correlated so here
 
 For more information on these configurations, such as examples of pairs of nodes
 that are the maximum distance apart, see the [raw
-data](https://github.com/JoshMermel/bandaged-cube-explorer/blob/main/diameter_analysis/analysis.csv)
-I hope this data is interesting to puzzlers who like finding configurations that
-have an enormous God's Number.
+data](https://github.com/JoshMermel/bandaged-cube-explorer/blob/main/diameter_analysis/analysis.csv).
 
 # Comparing QTM diameter to HTM diameter
 
@@ -270,3 +271,12 @@ constrained solve.
 
 # Closing thoughts
 
+The bandaged cube with the largest known god's number is the [Maze-300
+cube](https://twistypuzzles.com/forum/viewtopic.php?t=35731) by André Kutepow
+(Isaev). In QTM, this puzzle has a (stickered) god's number of 301, but it's
+(shape space) diameter is a mere 47. This makes me hopeful that some of the
+high-diameter puzzles that I mention in this post could be used to find a
+configuration with an even larger god's number.
+
+If you find such a configuration, or you find another intersting feature in the
+data, please send me an email and let me know!
