@@ -216,7 +216,9 @@ A few other configurations that stood out to me are:
 
 In a normal circle, the diameter is definitionally 2x the radius. In undirected
 graphs like ours, the diameter is capped at 2x the radius but can be smaller
-than that.
+than that. Here's a scatterplot of the overall relationship between the two:
+
+<img src="/images/bandaged-cube-diameter/radius_vs_diameter.svg" style="max-height: 400px">
 
 ## Equal diameter and radius
 
