@@ -91,16 +91,17 @@ I was quite surprised to see how small the graph for this configuration is. It
 has just 3780 vertices. Some configurations have over 20x as many vertices and
 yet have dramatically smaller diameters!
 
-I found the bandaged white center on this cube a little unsatisfying, because my
+At first, I found the bandaged white center on this cube a little unsatisfying, because my
 usual tools for playing with bandaged 3x3x3 puzzles (a cubetwist bandaged kit or
 the [Magic Cube
 app](https://play.google.com/store/apps/details?id=org.distorted.magic)) both
-can't handle that.
+can't handle that. Then I checked the diameter of this configuration with the
+white center unlocked and found that it does not change!
 
 ## Second largest
 
-Luckily, the configuration with the second largest diameter in both QTM and
-HTM, 0x83fe04000c21, does not have the same limitation.
+The configuration with the second largest diameter in both QTM and HTM is
+0x83fe04000c21.
 
 <img src="/images/bandaged-cube-diameter/0x83fe04000c21_overview.svg" style="max-height: 400px">
 
