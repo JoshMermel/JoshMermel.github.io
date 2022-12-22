@@ -126,7 +126,7 @@ Rounding out the top ten diameters (ordered by QTM), we have:
 9) 0x1084308420063D (QTM: 101, HTM: 75)
 10) 0x21000102000C43 (QTM: 100, HTM: 59)
 
-<img src="/images/bandaged-cube-diameter/top_10_diameter_qtm.svg" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/top_10_diameter_qtm.svg" style="max-height: 1600px">
 
 ## Top 10 (HTM)
 
@@ -155,7 +155,7 @@ I was surprised to see configurations like 0x21000102000C43 where the QTM
 diameter was so much larger than the HTM diameter (100 vs 59). Here’s a
 scatterplot of the raw data on these two measures:
 
-<img src="/images/bandaged-cube-diameter/diameter_htm_vs_qtm.png" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/diameter_htm_vs_qtm.png" style="max-height: 600px">
 
 ## High QTM/HTM
 
@@ -176,7 +176,7 @@ All the others have either a much smaller vertex count and/or a smaller diameter
 [0x100586802C3421](https://joshmermelstein.com/bandaged-cube-explorer?id=0x100586802C3421),
 [0x10818085ADB42D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10818085ADB42D)).
 
-<img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.svg" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.svg" style="max-height: 800px">
 
 Another group that jumped out at me are {
 [0x320084200C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x320084200C63),
@@ -186,7 +186,7 @@ Another group that jumped out at me are {
 } have QTM diameter=45 and HTM diameter=25. They also all have 96 vertices and
 132 edges.
 
-<img src="/images/bandaged-cube-diameter/high_qtm_over_htm.svg" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/high_qtm_over_htm.svg" style="max-height: 800px">
 
 ## Low QTM/HTM
 
@@ -204,7 +204,7 @@ The largest of these by vertex count are
 [0x10000000000002](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10000000000002),
 (240, and a diameter of 5).
 
-<img src="/images/bandaged-cube-diameter/min_qtm_over_htm.svg" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/min_qtm_over_htm.svg" style="max-height: 800px">
 
 A few other configurations that stood out to me are:
 0x10000084018421 (2540 vertices, QTM diameter 18, HTM diameter 17)
@@ -266,6 +266,7 @@ all connected to each other, plus so not-too-useful looking long dead ends.
 scramble pretty well though and would make for a challenging and highly
 constrained solve.
 
-<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 400px">
+<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 800px">
 
 # Closing thoughts
+
