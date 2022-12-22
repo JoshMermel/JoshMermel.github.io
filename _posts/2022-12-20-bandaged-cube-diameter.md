@@ -180,14 +180,6 @@ same puzzle in disguise as two different configurations.
 
 <img src="/images/bandaged-cube-diameter/max_qtm_over_htm.svg" style="max-height: 400px">
 
-All the others have either a much smaller vertex count and/or a smaller diameter
-(e.g.
-[0x18FFC0C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x18FFC0C03),
-[0x100586802C3421](https://joshmermelstein.com/bandaged-cube-explorer?id=0x100586802C3421),
-[0x10818085ADB42D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10818085ADB42D)).
-
-<img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.svg" style="max-height: 800px">
-
 ## Low QTM/HTM
 
 QTM diameter can never be lower than HTM diameter. Almost 70 configurations have
@@ -228,8 +220,8 @@ three largest ones are
 [0x20108000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x20108000000C03),
 and
 [0x30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203).
-Amazingly, all three of these are familiar to me. The first one is the subject
-of a [previous blog post of
+All three have a QTM radius and diameter of 15. Amazingly, all three of these
+are familiar to me. The first one is the subject of a [previous blog post of
 mine](https://joshmermelstein.com/solving-cofortress/). The other two are both
 mentioned at the end of that blog post as potentially related configurations! 
 
