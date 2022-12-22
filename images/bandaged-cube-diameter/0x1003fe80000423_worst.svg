@@ -76,7 +76,7 @@
 </symbol>
 </g>
 </defs>
-<g id="surface300">
+<g id="surface276">
 <path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 128 704 L 128 656 L 176 656 L 176 704 Z M 128 704 " transform="matrix(1,0,0,-1,-127,753)"/>
 <path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 176 656 L 176 704 L 224 704 L 224 656 Z M 176 656 " transform="matrix(1,0,0,-1,-127,753)"/>
 <path style="fill-rule:evenodd;fill:rgb(100%,100%,100%);fill-opacity:1;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 272 656 L 272 704 L 320 704 L 320 656 Z M 272 656 " transform="matrix(1,0,0,-1,-127,753)"/>
@@ -192,7 +192,5 @@
   <use xlink:href="#glyph1-4" x="217.333911" y="16.999"/>
   <use xlink:href="#glyph1-12" x="225.632757" y="16.999"/>
 </g>
-<path style="fill-rule:evenodd;fill:rgb(100%,0%,0%);fill-opacity:1;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 468 684 L 476 676 " transform="matrix(1,0,0,-1,-127,753)"/>
-<path style="fill-rule:evenodd;fill:rgb(100%,0%,0%);fill-opacity:1;stroke-width:0.4;stroke-linecap:butt;stroke-linejoin:round;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 468 676 L 476 684 " transform="matrix(1,0,0,-1,-127,753)"/>
 </g>
 </svg>
