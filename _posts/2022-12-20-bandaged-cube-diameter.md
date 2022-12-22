@@ -149,17 +149,23 @@ And here is the rest of the top 10 in HTM:
 
 <img src="/images/bandaged-cube-diameter/top_10_diameter_htm.svg" style="max-height: 400px">
 
-For more information on these configurations, such as examples of pairs of nodes
-that are the maximum distance apart, see the [raw
+The vertex counts of all these graphs are lower than I expected. The largest one
+is 0x1003DA80000423 with 7586 but most are well below 5000. To get a better
+sense of the data, I made this scatter plot of diameter (qtm) vs vertex count.
+
+<img src="/images/bandaged-cube-diameter/diameter_vs_vertices.svg" style="max-height: 600px">
+
+For more information on these configurations, such as examples of pairs of
+vertices that are the maximum distance apart, see the [raw
 data](https://github.com/JoshMermel/bandaged-cube-explorer/blob/main/diameter_analysis/analysis.csv).
 
 # Comparing QTM diameter to HTM diameter
 
-I was surprised to see configurations like 0x21000102000C43 where the QTM
-diameter was so much larger than the HTM diameter (100 vs 59). Here’s a
+Another thing I found surprising, was the different between QTM diameter and HTM
+diameter in configurations like 0x21000102000C43 (100 vs 59). Here’s a
 scatterplot of the raw data on these two measures:
 
-<img src="/images/bandaged-cube-diameter/diameter_htm_vs_qtm.png" style="max-height: 600px">
+<img src="/images/bandaged-cube-diameter/diameter_htm_vs_qtm.svg" style="max-height: 600px">
 
 ## High QTM/HTM
 
