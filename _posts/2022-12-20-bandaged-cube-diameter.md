@@ -251,18 +251,18 @@ fun looking graphs. If you're reading this blog post in search of interesting
 configurations to solve, here are the ones that stood out to me:
 
 [0x210B0118C00C5A](https://joshmermelstein.com/bandaged-cube-explorer?id=0x210B0118C00C5A)
-- Two identical looking subgraphs connected by a forced chain. I wonder if the
+: Two identical looking subgraphs connected by a forced chain. I wonder if the
 solve will require navigating the chain frequently - or even at all.
 
 [0x1084018C7C0C30](https://joshmermelstein.com/bandaged-cube-explorer?id=0x1084018C7C0C30)
-- Similar to the above but with a much longer chain connecting the segments.
+: Similar to the above but with a much longer chain connecting the segments.
 
 [0x1080018FFC0C21](https://joshmermelstein.com/bandaged-cube-explorer?id=0x1080018FFC0C21)
-- I'm not sure I've ever seen a graph like this. It has a few big loops that are
+: I'm not sure I've ever seen a graph like this. It has a few big loops that are
 all connected to each other, plus so not-too-useful looking long dead ends.
 
 [0x104000B5BDB5AD](https://joshmermelstein.com/bandaged-cube-explorer?id=0x104000B5BDB5AD)
-- A very small graph with only a few nontrivial loops. It seems like it can
+: A very small graph with only a few nontrivial loops. It seems like it can
 scramble pretty well though and would make for a challenging and highly
 constrained solve.
 
