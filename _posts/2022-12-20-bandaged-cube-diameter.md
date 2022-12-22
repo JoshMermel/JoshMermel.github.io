@@ -6,7 +6,8 @@ title: Bandaged Cube Diameter
 # Background
 
 Readers of my blog may recall a tool I released in 2020 called [bandaged cube
-explorer](https://joshmermelstein.com/bandaged-cube-explorer-post/). 
+explorer](https://joshmermelstein.com/bandaged-cube-explorer-post/). It used
+javascript to visualize the state space of bandaged 3x3x3 puzzles. 
 
 I recently got an email from someone who had used it to look at
 [0x2000402849B5E](https://joshmermelstein.com/bandaged-cube-explorer?id=0x2000402849B5E).
@@ -60,7 +61,7 @@ those.
 One useful optimization I found was to observe that bandaged configurations that
 only differ by orientation/mirroring must have the same eccentricity. Checking
 whether two cubes are the same modulo orientation is computationally cheap
-compared to breadth first search on a larger graph so this improved runtime
+compared to breadth first search on most graphs so this improved runtime
 dramatically.
 
 I applied this procedure to all 3559 bandaged configurations listed
@@ -254,22 +255,27 @@ fun looking graphs. If you're reading this blog post in search of interesting
 configurations to solve, here are the ones that stood out to me:
 
 [0x210B0118C00C5A](https://joshmermelstein.com/bandaged-cube-explorer?id=0x210B0118C00C5A)
-: Two identical looking subgraphs connected by a forced chain. I wonder if the
+has two identical looking subgraphs connected by a forced chain. I wonder if the
 solve will require navigating the chain frequently - or even at all.
 
 [0x1084018C7C0C30](https://joshmermelstein.com/bandaged-cube-explorer?id=0x1084018C7C0C30)
-: Similar to the above but with a much longer chain connecting the segments.
+is imilar to the above but with a much longer chain connecting the segments.
 
 [0x1080018FFC0C21](https://joshmermelstein.com/bandaged-cube-explorer?id=0x1080018FFC0C21)
-: I'm not sure I've ever seen a graph like this. It has a few big loops that are
+has a very unusual graph. It has a few big loops that are
 all connected to each other, plus so not-too-useful looking long dead ends.
 
 [0x104000B5BDB5AD](https://joshmermelstein.com/bandaged-cube-explorer?id=0x104000B5BDB5AD)
-: A very small graph with only a few nontrivial loops. It seems like it can
+has very small graph with only a few nontrivial loops. It seems like it can
 scramble pretty well though and would make for a challenging and highly
 constrained solve.
 
-<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 800px">
+[0x3FE00000C1C](https://joshmermelstein.com/bandaged-cube-explorer?id=0x3FE00000C1C)
+has the largest vertex count if we restrict ourselves to cubes that contain no
+"normal" edges or corners. I believe that unbandaging the white center has no
+effect on the solve, the cube is too constrained for it to ever turn.
+
+<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 1200px">
 
 # Closing thoughts
 
