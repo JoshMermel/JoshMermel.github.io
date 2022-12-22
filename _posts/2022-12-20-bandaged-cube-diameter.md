@@ -188,16 +188,6 @@ All the others have either a much smaller vertex count and/or a smaller diameter
 
 <img src="/images/bandaged-cube-diameter/max_qtm_over_htm2.svg" style="max-height: 800px">
 
-Another group that jumped out at me are {
-[0x320084200C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x320084200C63),
-[0x6020084200C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x6020084200C63),
-[0x6009118400C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x6009118400C63),
-[0x10858086200C63](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10858086200C63)
-} have QTM diameter=45 and HTM diameter=25. They also all have 96 vertices and
-132 edges.
-
-<img src="/images/bandaged-cube-diameter/high_qtm_over_htm.svg" style="max-height: 800px">
-
 ## Low QTM/HTM
 
 QTM diameter can never be lower than HTM diameter. Almost 70 configurations have
