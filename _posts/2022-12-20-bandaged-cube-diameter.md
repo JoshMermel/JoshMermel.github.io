@@ -212,6 +212,46 @@ A few other configurations that stood out to me are:
 
 <img src="/images/bandaged-cube-diameter/low_qtm_over_htm.svg" style="max-height: 400px">
 
+# Diameter/Radius
+
+In a normal circle, the diameter is definitionally 2x the radius. In undirected
+graphs like ours, the diameter is capped at 2x the radius but can be smaller
+than that.
+
+## Equal diameter and radius
+
+There are ~70 puzzles where diameter and radius equal in qtm. By radius, the
+three largest ones are
+[0x30000010048883](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000010048883),
+[0x20108000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x20108000000C03),
+and
+[0x30000000040203](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30000000040203).
+Amazingly, all three of these are familiar to me. The first one is the subject
+of a [previous blog post of
+mine](https://joshmermelstein.com/solving-cofortress/). The other two are both
+mentioned at the end of that blog post as potentially related configurations! 
+
+<img src="/images/bandaged-cube-diameter/equal_radius_diameter.svg" style="max-height: 800px">
+
+## Nearly equal diameter and radius
+
+If we expand our search to puzzles where diameter is only slightly larger that
+radius then we can find some other puzzles whose graph forms one big loop.
+
+One that jumped out at me was
+[0x80408B40DC7A1](https://joshmermelstein.com/bandaged-cube-explorer?id=0x80408B40DC7A1)
+(diameter 47 qtm, radius 38 qtm). This puzzle turns out to be the [Maze-300
+cube](https://twistypuzzles.com/forum/viewtopic.php?t=35731) by André Kutepow
+(Isaev). It is the bandaged 3x3x3 with the largest known god's number (301 qtm).
+
+A few others that seem potentially interesting are
+[0x1108100440843](https://joshmermelstein.com/bandaged-cube-explorer?id=0x1108100440843)
+(diameter 48 qtm, radius 39 qtm) which has a beautiful spread out graph with
+lots of loops. Also 0x10843086218C21 (diameter 53 qtm, radius 42 qtm) and
+0x139E0090002D (diameter 62 qtm, radius 46 qtm).
+
+<img src="/images/bandaged-cube-diameter/nearly_equal_radius_diameter.svg" style="max-height: 800px">
+
 # Is vertex count a good predictor of diameter?
 
 Nope!
@@ -275,12 +315,10 @@ effect on the solve, the cube is too constrained for it to ever turn.
 
 # Closing thoughts
 
-The bandaged cube with the largest known god's number is the [Maze-300
-cube](https://twistypuzzles.com/forum/viewtopic.php?t=35731) by André Kutepow
-(Isaev). In QTM, this puzzle has a (stickered) god's number of 301, but it's
-(shape space) diameter is a mere 47. This makes me hopeful that some of the
-high-diameter puzzles that I mention in this post could be used to find a
-configuration with an even larger god's number.
+The maze 300 cube has a qtm diameter of only 48, many of the puzzles discussed in the
+blog post have a dramatically larger diamter. I wonder if one of these will be
+able to take the record for the configuration with the largest known god's
+number.
 
 If you find such a configuration, or you find another intersting feature in the
 data, please send me an email and let me know!
