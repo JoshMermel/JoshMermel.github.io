@@ -117,14 +117,14 @@ vertices.
 
 Rounding out the top ten diameters (ordered by QTM), we have:
 
-3. 0x10000080800C63 (QTM: 117, HTM: 73)
-4. 0x21109308C00C46 (QTM: 115, HTM: 90)
-5. 0x108430C40007A3 (QTM: 113, HTM: 92)
-6. 0x1003DA80000423 (QTM: 110, HTM: 90)
-7. 0x1084308620063D (QTM: 107, HTM: 79)
-8. 0x10039E80000403 (QTM: 101, HTM: 83)
-9. 0x1084308420063D (QTM: 101, HTM: 75)
-10. 0x21000102000C43 (QTM: 100, HTM: 59)
+3) 0x10000080800C63 (QTM: 117, HTM: 73)
+4) 0x21109308C00C46 (QTM: 115, HTM: 90)
+5) 0x108430C40007A3 (QTM: 113, HTM: 92)
+6) 0x1003DA80000423 (QTM: 110, HTM: 90)
+7) 0x1084308620063D (QTM: 107, HTM: 79)
+8) 0x10039E80000403 (QTM: 101, HTM: 83)
+9) 0x1084308420063D (QTM: 101, HTM: 75)
+10) 0x21000102000C43 (QTM: 100, HTM: 59)
 
 <img src="/images/bandaged-cube-diameter/top_10_diameter_qtm.svg" style="max-height: 400px">
 
@@ -132,14 +132,14 @@ Rounding out the top ten diameters (ordered by QTM), we have:
 
 As you can see, QTM diameter and HTM diameter are not totally correlated so here’s the rest of the top 10 by HTM:
 
-3. 0x108430C40007A3 (#5 above)
-4. 0x21109308C00C46 (#4 above)
-5. 0x1003DA80000423 (#6 above)
-6. 0x10039E80000403 (#8 above)
-7. 0x1084308620063D (#7 above)
-8. 0x72920080007F (QTM: 95, HTM: 77)
-9. 0x1084308420063D (#9 above)
-10. 0x139200800C1C (QTM: 94, HTM: 75)
+3) 0x108430C40007A3 (#5 above)
+4) 0x21109308C00C46 (#4 above)
+5) 0x1003DA80000423 (#6 above)
+6) 0x10039E80000403 (#8 above)
+7) 0x1084308620063D (#7 above)
+8) 0x72920080007F (QTM: 95, HTM: 77)
+9) 0x1084308420063D (#9 above)
+10) 0x139200800C1C (QTM: 94, HTM: 75)
 
 <img src="/images/bandaged-cube-diameter/top_10_diameter_htm.svg" style="max-height: 400px">
 
