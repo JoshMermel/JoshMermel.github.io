@@ -258,7 +258,7 @@ diameter, e.g. 0x21000100008C43 (726 vertices, QTM diameter of 95) and
 <img src="/images/bandaged-cube-diameter/low_vertex_high_diameter.svg" style="max-height: 400px">
 
 There are also plenty of examples of graphs with a high vertex count but
-relatively low diameter, such as 0x8000000804 (a.k.a “3 stripes”) (1296`
+relatively low diameter, such as 0x8000000804 (a.k.a “3 stripes”) (1296
 vertices, QTM diameter of 8), and 0x20008000000806 (7344 vertices, QTM diameter
 of 14).
 
@@ -289,7 +289,7 @@ god's number.
 If you find such a configuration, or you find another intersting feature in the
 data, please send me an email and let me know!
 
-# Addendum - what if we ignore the cube's orientation when computing diameter?
+# More thoughts - cube orientation
 
 (This update was published on Jan 14, 2023.)
 
@@ -310,13 +310,13 @@ diameter of 0. In case where dividing by 0 would be inconvenient, I'll be
 ignoring these configurations instead.
 
 If you'd like to play with the raw data, I made it [available on my
-github](https://github.com/JoshMermel/bandaged-cube-explorer/blob/main/diameter_analysis/analysis_ignoring_orientation.csv)
+github](https://github.com/JoshMermel/bandaged-cube-explorer/blob/main/diameter_analysis/analysis_ignoring_orientation.csv). Putting all of it in one .csv felt unwieldly so I split this data into its own file. If you'd like to merge them, the rows are in the same order in both.
 
 ## Largest vertex count
 
 This has nothing to do with graph diameters but I've never seen these results
 posted before so I might as well mention them here. These are the four
-configurations with the largest vertex count if we ignore orientation.
+configurations with the largest vertex counts if we ignore orientation.
 
 1. 0x10840080800423 (21490 vertices) [3rd most vertices when considering orientation]
 2. 0x10041080200421 (18551 vertices) [7th most vertices when considering orientation]
@@ -381,7 +381,7 @@ count but with a few bandaged centers.
 
 Many configurations achieve the lower bound where QTM and HTM diameters are
 equal.
-[0x80018620002D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x80018620002D&highlight=rotations)
+[0x80018620002D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x80018620002D&highlight=rotations) (discussed above)
 does not have any self symmetries so it is still the largest of these by
 diameter (17). It is also the largest by vertex count (66).
 
