@@ -446,7 +446,7 @@ is considered.
 
 The largest by diameter are 0x108430C40007A3 (seen above), then 0x500180800C3D
 (seen above). The largest by vertex count are 0x10840084018423 (12647) and
-0x100400B4200631 (11589).
+x100400B4200631 (11589).
 
 <img src="/images/bandaged-cube-diameter/high_vertex_low_symmetry.svg" style="max-height: 400px">
 
@@ -483,7 +483,7 @@ significantly but whose diameter does not change.
 
 A few standouts are
 [0x10840000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x10840000000C03&ignore_orientation=true)
-(904->127 vertices, 15 diameter HTM), 0x3F6000005AD (2304->576 vertices, 49
+(904->127 vertices, 23 diameter QTM), 0x3F6000005AD (2304->576 vertices, 49 HTM
 diameter).
 
 <img src="/images/bandaged-cube-diameter/small_diameter_change.svg" style="max-height: 400px">
@@ -538,7 +538,8 @@ If we restrict ourselves to puzzles where all centers are "normal" meaning no
 bandaging to the core or to edges, we have 26 puzzles to look at.
 
 0x20088000000C06 has the largest diameter (27 QTM) of these puzzles if we care
-about orientation.
+about orientation. This was was noted above for have losing a large fraction of
+vertices when we start caring about orientation.
 [0x20088000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x20088000000C03&ignore_orientation=true)
 has the largest diamter (20 QTM) if we do not care about orientation.
 
@@ -568,7 +569,7 @@ constrained solve.
 [0x30018080002D](https://joshmermelstein.com/bandaged-cube-explorer?id=0x30018080002D)
 has an intersting graph shape. It is sparse but hard to untangle.
 
-<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 800px">
+<img src="/images/bandaged-cube-diameter/bonus.svg" style="max-height: 1200px">
 
 # Closing thoughts (again)
 
