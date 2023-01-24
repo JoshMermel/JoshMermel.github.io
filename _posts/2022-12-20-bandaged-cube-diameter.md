@@ -446,7 +446,7 @@ is considered.
 
 The largest by diameter are 0x108430C40007A3 (seen above), then 0x500180800C3D
 (seen above). The largest by vertex count are 0x10840084018423 (12647) and
-x100400B4200631 (11589).
+0x100400B4200631 (11589).
 
 <img src="/images/bandaged-cube-diameter/high_vertex_low_symmetry.svg" style="max-height: 400px">
 
@@ -537,9 +537,9 @@ is in third place for vertex count whether or not we care about orientation.
 If we restrict ourselves to puzzles where all centers are "normal" meaning no
 bandaging to the core or to edges, we have 26 puzzles to look at.
 
-0x20088000000C06 has the largest diameter (27 QTM) of these puzzles if we care
-about orientation. This was was noted above for have losing a large fraction of
-vertices when we start caring about orientation.
+0x20088000000C06 (seen above) has the largest diameter (27 QTM) of these puzzles
+if we care about orientation. This was was noted above for have losing a large
+fraction of vertices when we start caring about orientation.
 [0x20088000000C03](https://joshmermelstein.com/bandaged-cube-explorer?id=0x20088000000C03&ignore_orientation=true)
 has the largest diamter (20 QTM) if we do not care about orientation.
 
