@@ -16,6 +16,8 @@ host blog posts on ideas I had and a handful of javascript tools I made.
        rhythm alltogether).
    - [bandaged-cube-explorer](https://joshmermelstein.com/bandaged-cube-explorer)
      - A tool for exploring bandaged configurations of a 3x3x3 Rubik's cube.
+   - [bandaged-cubeshape](https://joshmermelstein.com/bandaged-cubeshape)
+     - A tool for solving the shape of bandaged 3x3x3s
  - I also do IRL juggling sometimes
    - [My IJA tricks of the Month](https://www.juggle.org/ija-tricks-of-the-month-by-josh-mermelstein-from-usa-juggling-balls/)
    - [My Instagram where I post new ideas](https://www.instagram.com/joshmermel/)
