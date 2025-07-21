@@ -3,16 +3,16 @@ layout: post
 title: Axles puzzle
 ---
 
-This is a post about https://joshmermelstein.com/axles , a game I put together
-with help from Gemini. This post might make more sense if you go play a round
-before you read it.
+This is a post about [axles](https://joshmermelstein.com/axles), a game I put
+together with help from Gemini. This post might make more sense if you go play a
+round before you read it.
 
 # Background
 
-In 2024, I saw a post on the twisty puzzles forum about the Peterhoff-Smolensk
-puzzle - https://twistypuzzles.com/forum/viewtopic.php?t=39375 . I thought it
-was a really nice idea, and filed it on my mental "I should think more about
-this" list. 
+In 2024, I saw a post on the twisty puzzles forum about the [Peterhoff-Smolensk
+puzzle](https://twistypuzzles.com/forum/viewtopic.php?t=39375). I thought it was
+a really nice idea, and filed it on my mental "I should think more about this"
+list. 
 
 # Simulator in Rust
 
@@ -112,8 +112,8 @@ could interact with. That helped me refine my goal, and saved me a few hours.
 # Future work
 
 The author of Peterhoff-Smolensk recently published a 3D version of their idea,
-which they call the "Bomzh Cube" -
-https://twistypuzzles.com/forum/viewtopic.php?t=40211
+which they call the [Bomzh
+Cube](https://twistypuzzles.com/forum/viewtopic.php?t=40211)
 
 I think this idea is fascinating as well, and that it would be neat to have a
 digital simulator for it. I would need to learn quite a lot (or lean even harder
