@@ -18,6 +18,11 @@ host blog posts on ideas I had and a handful of javascript tools I made.
      - A tool for exploring bandaged configurations of a 3x3x3 Rubik's cube.
    - [bandaged-cubeshape](https://joshmermelstein.com/bandaged-cubeshape)
      - A tool for solving the shape of bandaged 3x3x3s
+ - Games
+   - [Axles](https://joshmermelstein.com/axles)
+     - A twisty puzzle about aligning arrows where each move blocks other moves.
+   - [Multiverse Star Battle](https://joshmermelstein.com/multiverse-star-battle)
+     - A Star Battle variant where you solve two ambiguous boards to find the single shared solution.
  - I also do IRL juggling sometimes
    - [My IJA tricks of the Month](https://www.juggle.org/ija-tricks-of-the-month-by-josh-mermelstein-from-usa-juggling-balls/)
    - [My Instagram where I post new ideas](https://www.instagram.com/joshmermel/)
