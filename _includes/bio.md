@@ -1,6 +1,6 @@
 I graduated from Tufts in 2015 with a dual MS in Computer Science and
 Mathematics. I now live in Boston, MA and work at Google. I use this website to
-host blog posts on ideas I had and a handful of javascript tools I made.
+host blog posts on ideas I had and a handful of javascript tools and games I made.
 
  - Juggling Tools
    - [juggle-suggest2](https://joshmermelstein.com/juggle-suggest2/)
@@ -14,6 +14,7 @@ host blog posts on ideas I had and a handful of javascript tools I made.
    - [polyrhythmic-fountain](https://joshmermelstein.com/polyrhythmic-fountain/)
      - Animates a 4 ball fountain with various polyrhythms (or with a lack of
        rhythm alltogether).
+ - Rubik's Cube Tools
    - [bandaged-cube-explorer](https://joshmermelstein.com/bandaged-cube-explorer)
      - A tool for exploring bandaged configurations of a 3x3x3 Rubik's cube.
    - [bandaged-cubeshape](https://joshmermelstein.com/bandaged-cubeshape)
