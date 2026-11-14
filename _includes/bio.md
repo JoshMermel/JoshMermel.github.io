@@ -24,6 +24,8 @@ host blog posts on ideas I had and a handful of javascript tools and games I mad
      - A twisty puzzle about aligning arrows where each move blocks other moves.
    - [Multiverse Star Battle](https://joshmermelstein.com/multiverse-star-battle)
      - A Star Battle variant where you solve two ambiguous boards to find the single shared solution.
+   - [Polyomino Panel](https://joshmermelstein.com/polyomino-panel)
+     - Packing puzzles on square, hex, and triangle grids. 
  - I also do IRL juggling sometimes
    - [My IJA tricks of the Month](https://www.juggle.org/ija-tricks-of-the-month-by-josh-mermelstein-from-usa-juggling-balls/)
    - [My Instagram where I post new ideas](https://www.instagram.com/joshmermel/)
